@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialog>
+    <com dialog="" enable="" id="greeting" speaker="helper0">
+        <com dialog="" enable="" id="whatHappened" speaker="joe">
+            <com dialog="" enable="" id="SantaGotLost" speaker="helper0">
+                <com dialog="" enable="" id="how" speaker="joe">
+                    <com dialog="" enable="" id="MustHaveUnest" speaker="helper0">
+                        <com dialog="" enable="" id="WhyUnest" speaker="joe">
+                            <com dialog="" enable="" id="opinionvydirat" speaker="helper0">
+                                <com dialog="" enable="" id="WeMustHelp" speaker="joe">
+                                    <com dialog="" enable="" id="DontWorry" speaker="joe"/>
+                                </com>
+                            </com>
+                        </com>
+                        <com dialog="" enable="" id="howUnest" speaker="joe">
+                            <com dialog="" enable="" id="HowUnestAnswer" speaker="helper0">
+                                <com dialog="" enable="" id="WhoCanUnest" speaker="joe">
+                                    <com dialog="" enable="" id="MustBeProfesionals" speaker="helper0"/>
+                                </com>
+                            </com>
+                        </com>
+                        <com dialog="" enable="" id="needGo" speaker="joe">
+                            <com dialog="endDialog" enable="" id="seeyou" speaker="helper0"/>
+                        </com>
+                    </com>
+                </com>
+            </com>
+        </com>
+    </com>
+</dialog>

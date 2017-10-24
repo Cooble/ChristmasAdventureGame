@@ -1,0 +1,3 @@
+->dialog.joeDarkThough
+needLight=Nic nevidím! Musím najít nějaké světlo!
+whatHappened=Och ne! Co se stalo?

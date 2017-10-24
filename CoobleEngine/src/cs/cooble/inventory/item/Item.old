@@ -1,0 +1,91 @@
+package cs.cobble.game.inventory.item;
+
+import cs.cobble.game.graphics.BitmapProvider;
+import cs.cobble.game.translate.Translator;
+import cs.cobble.game.window.Tickable;
+import cs.cobble.game.world.NBT;
+import cs.cobble.game.world.NBTSaveable;
+
+/**
+ * Created by Matej on 29.7.2016.
+ */
+public class Item implements NBTSaveable,Tickable{
+    private final int ID;
+    protected BitmapProvider bitmapProvider;
+    private String name;
+    private String textName;
+
+    public Item(int id) {
+        ID = id;
+    }
+
+    /**
+     * sets name like item.itemPot.name
+     * @param name
+     */
+    public void setName(String name) {
+        this.name =name;
+    }
+
+    /**
+     * sets name and textName with Translate name into lang which will be displayed when focused with mouse on this item in inventory
+     * @param name
+     */
+    public void setNameAndText(String name) {
+        this.name =name;
+        this.textName=Translator.translate(name);
+    }
+
+    public void setTextName(String textName) {
+        this.textName = textName;
+    }
+
+    /**
+     * Called when was right clicked on the item in the inventory.
+     * Used for doing some action for example: opening book, reading letter.
+     */
+    public void onRightClickInventory() {}
+    /**
+     * Called when was right clicked on some item in the inventory with this item.
+     *
+     * @return item which was created by assembling two items (items will be deleted)
+     * null when nothing should happen
+     */
+    public Item clickedWithInInventory(Item someItem) {
+        return null;
+    }
+
+    public final BitmapProvider getInventoryBitmapProvider() {
+        return bitmapProvider;
+    }
+
+    @Override
+    public void readFromNBT(NBT nbt) {}
+
+    @Override
+    public void writeToNBT(NBT nbt) {}
+
+    @Override
+    public boolean isDirty() {
+        return false;
+    }
+
+    @Override
+    public void tick() {}
+
+    public int getID() {
+        return ID;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public String getTextName() {
+        return textName;
+    }
+}

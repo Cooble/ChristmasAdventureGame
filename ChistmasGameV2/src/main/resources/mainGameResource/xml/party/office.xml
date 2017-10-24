@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<location BACKGROUND="office" LOCID="office">
+    <stuffs>
+        <office_window height="55" width="73" x="220" y="12">
+            <toCome x="257" y="111"/>
+        </office_window>
+        <vase height="22" width="30" x="157" y="41"/>
+        <whiteboard height="32" width="46" x="22" y="16">
+            <toCome x="37" y="114"/>
+        </whiteboard>
+        <library height="92" width="32" x="288" y="70">
+            <toCome x="290" y="173"/>
+        </library>
+        <fan0 height="52" width="32" x="196" y="43">
+            <bitmap scale="1.0" x="196" y="43">fan</bitmap>
+            <pickup/>
+            <toCome x="222" y="117"/>
+        </fan0>
+        <fan1 height="52" width="14" x="306" y="27">
+            <bitmap delay="20" scale="1.0" type="SAW" x="306" y="27">fanSmall</bitmap>
+            <pickup/>
+            <toCome x="307" y="174"/>
+        </fan1>
+        <pc_cover height="38" width="21" x="161" y="128">
+            <bitmap scale="2.0" x="126" y="128">pc_cover</bitmap>
+            <toCome x="173" y="183"/>
+        </pc_cover>
+        <electronics height="30" width="30" x="160" y="139">
+            <bitmap scale="0.75" x="160" y="139">electronics_item</bitmap>
+            <pickup/>
+            <toCome x="169" y="174"/>
+        </electronics>
+        <monitor height="44" width="57" x="86" y="39"/>
+    </stuffs>
+    <arrows>
+        <toParty height="12" imageX="228" imageY="145" location="party" width="121" x="199" y="168">
+            <pos>DOWN</pos>
+            <size>SMALL</size>
+            <toCome x="261" y="204"/>
+            <toFinal right="true" x="50" y="134"/>
+        </toParty>
+    </arrows>
+</location>

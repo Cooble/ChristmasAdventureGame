@@ -1,0 +1,6 @@
+->dialog.startPartyDialog
+dontSpeak=Just don't speak and dance as good as you can!
+iLoveSanta=I love you Santa!
+bestPartyEver=Best party EVER!!!
+haveFun=Have fun you lot! This happens just once a year!
+bestParty=That's the best party I have ever been into!!!

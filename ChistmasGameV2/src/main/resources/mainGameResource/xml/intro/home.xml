@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<location BACKGROUND="home" BOOLMAP="home" LOCID="home">
+    <backgroundSound volume="1">fireplace</backgroundSound>
+    <stuffs>
+        <tree height="133" width="78" x="41" y="12"/>
+        <furnace height="56" width="32" x="142" y="89">
+            <toCome x="177" y="159"/>
+        </furnace>
+        <socks height="35" width="50" x="146" y="21"/>
+        <window height="60" width="70" x="218" y="14">
+            <toCome x="254" y="126"/>
+        </window>
+        <calender height="34" width="33" x="17" y="12"/>
+        <pot height="13" width="29" x="145" y="75">
+            <bitmap scale="1" x="145" y="76">pot</bitmap>
+            <toCome x="175" y="152"/>
+        </pot>
+        <kamna height="0" width="0" x="151" y="100">
+            <bitmap delay="20" scale="1.0" type="TOOTH" x="136" y="84">kamna</bitmap>
+        </kamna>
+        <droplets_socks height="0" width="0" x="159" y="83">
+            <bitmap delay="12" scale="1.0" type="SAW" x="147" y="50">droplet_socks</bitmap>
+        </droplets_socks>
+    </stuffs>
+    <arrows>
+        <toPostbox height="181" imageX="290" imageY="104" location="post_box" width="16" x="304" y="0">
+            <pos>RIGHT</pos>
+            <size>BIG</size>
+            <toCome x="332" y="160"/>
+            <toFinal right="true" x="12" y="174"/>
+        </toPostbox>
+    </arrows>
+</location>

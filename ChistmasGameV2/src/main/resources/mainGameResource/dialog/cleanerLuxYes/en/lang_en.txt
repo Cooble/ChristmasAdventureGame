@@ -1,0 +1,7 @@
+->dialog.cleanerLuxYes
+see=See?
+what=What's this? Well, that looks like some toy you have stolen from my storageroom but...
+thank=Thanks a lot! You are truly good person. You can have the hoover. I don't need it at all.
+strech=Just strech it like this.
+great=That's great now I don't have to work at all! Everything will do this strange cute little hepler! I can now take care of my children in time I'd normally be at work.
+welcome=You're welcome!

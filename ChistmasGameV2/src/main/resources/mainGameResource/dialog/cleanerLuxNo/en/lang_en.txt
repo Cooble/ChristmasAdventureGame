@@ -1,0 +1,8 @@
+->dialog.cleanerLuxNo
+whereGoing=Hey! Where do you think you're going man?!
+fromKumbal=Well, just out of storeroom. Some problem?
+bigProblem=Big problem! Why do YOU have my hoover with you?!
+niceTry=Nice try!
+children=I have to take care of my children.. And you wanted to steal my only work equipment!
+dontSay=Don't say anything! I know exactly what you wanted to do! You wanted to steal it! Have you thought of someone else than you? You're so selfish!
+just=Well just...

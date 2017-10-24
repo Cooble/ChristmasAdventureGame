@@ -1,0 +1,253 @@
+game.name=Christmas Game
+joe.name=Joe
+button.play.name=Play
+button.settings.name=Settings
+button.exit.name=Quit
+button.save.name=Save
+button.clear.name=Clear
+button.fullscreen.name=Fullscreen
+button.fullscreen.focus=Switch fullscreen (restarts game)
+button.lang.focus=Changes game language
+button.clear.focus=Uninstall and exit game. Cannot undo!
+
+//intro
+->location.intro.stuff
+link.name=Open web browser
+question_mark.name=Game Info
+exclamation_mark.name=Controls
+trash.name=Clear and exit game. Cannot undo! (Drag and click "Clear")
+<-
+
+true=Yes
+false=No
+language=Language
+back=Back
+
+isLocked=It's locked.
+
+cleaner=Cleaner
+helper0=Santa's Helper
+washy=Washy
+
+//items
+->item
+screwdriver.name=Screwdriver
+battery.name=Fine battery
+big_battery.name=Big Fine Battery
+blueprint.name=Quadracopter blueprint
+book.name=Book of crafty man
+blueprint.name=Quadracopter BluePrint
+brush.name=Toothbrush
+electronics.name=Electronics from PC
+fan.name=Fan
+office_key.name=Santa's key
+cap.name=Santa's cap
+cap.findkey=Oh. Santa had key in his hat! I wonder which door it opens.
+cap.nomore=No more surprises in this hat!
+lux.name=Hoover
+mail.name=Letter
+pot.name=Pot with hot water
+soldier.name=Toy Soldier
+soldier_brush.name=Soldier with Brush
+<-
+entity.joe.blueprint=I can see how to make quadracopter. I found it in Guidebook where are listed materials for crafting.
+entity.joe.ingredients=Well, let's see. For Quadracopter I will need Battery, probably really big, next I will need some Electronics, also an engine, surely electric, and 4 Airscrews. I wonder whether I can get all those materials and where I could craft such a thing?
+entity.joe.idea=Let me think. We have to save Santa and Santa was kidnapped in his sledge. I need similar vehicle to be able to get to him, but there is no such machine or is it?
+entity.joe.quadraidea=Oh... that's it! That's the solution of the cannot-get-to-Santa-problem! With that I can save him, but I'm afraid I won't find it anywhere.
+entity.joe.code=Hmm, that's strange. It doesn't look like some toys. Maybe It's... no that he would never do!
+entity.joe.nomoreBat=No more batteries in robot.
+entity.joe.craftquadra=Well now we have all those materials so Let's craft it! Just some hammer saw welder....
+entity.joe.quadra_crafted=Ladies and gentlemen, finally it's finished. Now I need to find some good place for start! Don't worry Santa I'm coming!
+entity.joe.nofit=It doesn't fit in!
+entity.joe.batteryNoFit=Am I supposed to insert it under some button?
+entity.joe.snowBalls=A jéje, to jsou ale velké snìhové koule. Rozhodnì nechci dostat jednou z nich za krk!
+entity.joe.snowBalls=Oh these snowballs look really big. I hope that some of them won't get behind my neck.
+//LocationHome
+->location.home.
+stuff.socks.comment.0=I don't think it's good idea to be near these smelly socks.
+stuff.socks.comment.1=These socks are mine.
+stuff.socks.comment.2=I'm drying them out above hot furnace.
+stuff.socks.comment.3=I'm preparing them for Santa's presents.
+stuff.tree.comment.0=This tree is nice.
+stuff.tree.comment.1=I got it yesterday.
+stuff.tree.comment.2=Just one day left!
+stuff.calender.name=Calender
+stuff.calender.comment.0=Just one long day left!
+stuff.furnace.comment.0=Hot furnace!
+stuff.furnace.comment.1=I'm not going to touch it.
+stuff.furnace.comment.2=It's giving off nice warmth.
+stuff.pot.comment.0=Pot with hot water.
+stuff.pot.comment.1=I don't need this anyway.
+stuff.pot.comment.2=I'll take this.
+stuff.pot.name=Pot with hot water
+stuff.socks.name=Socks
+stuff.tree.name=Christmas tree
+stuff.furnace.name=Furnace
+<-
+
+
+//LocationPostBox
+->location.post_box.stuff.postbox
+comment.0=Frozen Post Box.
+comment.1=Well It looks like is something in.
+comment.2=I can't get in!
+comment.3=Nice, I am crafty!
+success=Great!
+name=Mailbox
+->location.post_box
+stuff.mail.name=Mail
+<-
+loc.postbox.letter= Dear Joe, we are inviting you to Christmas party on 23rd Dec at the North pole. PS: Santa will be there too.                   Sincerely                   Santa's managers
+
+//busStop
+item.screwdriver.name=Screwdriver
+
+//party
+->location.party
+stuff.door.name=Door To Santa's Office
+stuff.door.comment.0=That's private.
+stuff.door.comment.1={isLocked}
+stuff.switch.comment.0= Just Light Switch
+stuff.switch.name=Light Switch
+unlocking=The key fits in!
+unlocked=Let's look what he has there.
+comment.best=That's the best party I have ever been to!!!!
+isLocked={isLocked}
+noopendoor=First I have to find some light!
+<-
+
+//cottage_left
+->location.cottage_left.
+stuff.lever0.name=Electric Box
+stuff.lever1.name=Circuit Breaker
+stuff.lever.comment.0=Well, here I could switch the electricity on!
+
+//garage
+->location.garage.
+stuff.calculator.name.0=Strange calculator
+stuff.calculator.name.1=Electronical Garage Lock
+stuff.calculator.comment.0=Hmm, it looks like a lock connected to garage door.
+stuff.garage_door.comment.0=Santa's Garage
+<-
+//calc
+location.calculator.stuff.toBottom2.name=Bottom side
+
+entity.joe.calcNoPower=It seems that it doesn't have power. Maybe it's caused by the blackout.
+entity.joe.santaAmnesia=This doesn't look productive. If only was Santa forgetful and wrote it down.         somewhere
+
+//calcBottom
+->location.calculator_bottom.
+stuff.bat1.name0=Here should be a battery
+stuff.bat1.name1=Heavy duty battery
+stuff.bat2.name0=Another battery absence
+stuff.bat2.name1=Great battery
+
+//path
+->location.path.
+stuff.santa_hat.comment.0=Oh, here is something!
+stuff.santa_hat.comment.1=It's red!
+stuff.santa_hat.comment.2=This must be Santa's cap!
+stuff.santa_hat.comment.3=He probably dropped it to show where did they take him.
+stuff.santa_hat.pickup=I will take it.
+stuff.santa_hat.name=Something
+//office
+->location.office.
+stuff.whiteboard.name=Whiteboard
+stuff.office_window.name=Window
+stuff.monitor.name=Santa's monitor
+stuff.library.name=Case
+stuff.vase.name=Vase
+stuff.fan0.name=Fan
+stuff.fan1.name=Another Fan
+stuff.fan0.pickup=I like fans!
+stuff.fan1.pickup=Fans are cool!
+stuff.office_window.comment.0=I can see dark!       and trees.
+stuff.office_window.comment.1=I wonder how it'd look like, if there weren't any trees?
+stuff.pc_cover.comment.0=It's off.
+stuff.case.comment.0=Just case with boring documents.
+stuff.case.comment.1=Hmm...
+stuff.vase.comment.0=Vase
+stuff.pc_cover.name=PC
+//library
+->location.library
+stuff.guidebook.name=Guide book
+stuff.guidebook.pickup=This might come handy!
+stuff.book_other.name=Turkey in a hundred ways
+stuff.book_other.comment.0=I'm not hungry!
+stuff.book_gifts.name=Gifts for babies
+stuff.book_gifts.comment.0=I'm not a baby!
+//garage_in
+->location.garage_in
+stuff.blueprint_no_place.comment.0=This is Santa's workbench!
+stuff.blueprint_no_place.comment.1=Here he used to make presents.
+stuff.blueprint_placed.comment.0=Now I know what to do.
+stuff.blueprint_placed.comment.1=Let's find all materials.
+stuff.blueprint.name.1=Quadracopter Blueprint
+stuff.blueprint.name.0=Tool wall
+comment.blueprintplaced.0=Here you go!
+<-
+entity.joe.noBlueprint=That's nice, but I need some guide.
+//hall
+->location.hall.
+stuff.kumbal_door.name=Door to closet.
+stuff.kumbal_door.comment.0=Here could be something.
+<-
+entity.cleaner.busy=I'mbussy!
+entity.cleaner.brush=Such a small Toothbrush? If it was cleaning on its own, I'd take it!
+
+
+
+//kumbal
+->location.kumbal.
+stuff.girrafe1.name=Girrafe Toy
+stuff.girrafe3.name=Girrafe Toy
+stuff.sysel0.name=Gopher Toy
+stuff.sysel1.name=Another Gopher
+stuff.sysel2.name=Jeez, how many gophers are there?
+stuff.robot.name=Robot Toy
+stuff.lux.name=Hoover
+stuff.soldier.name=Toy Soldier
+
+//hall2
+->location.hall2.
+stuff.bath_door_in.name=Bathroom
+<-
+entity.washy.canGo=Now the bathroom is free.
+
+//bathroom
+->location.bathroom.
+stuff.shower.name=Shower
+stuff.shower.comment.0=Place to remove dirt.
+stuff.shower.comment.1=No, not now.
+stuff.shower.comment.2=I must find the Santa first!
+
+//cellar
+->location.cellar
+stuff.dark_fan.pickup=Here you are!
+valve.name=Water valve
+->entity
+washy.comment.hasWater=Oh. Finally, I can wash myself.
+washy.comment.hadWater=That was such a good shower.
+washy.cold=Ohh cold!
+joe.drown=I personally don't want to make flood!
+
+
+//quadratrip
+->entity.joe
+letsfly=Let's head to Santa!
+falling.0=We're going down!
+falling.1=Nooo!
+falling.2=Again?
+falling.3=Oh.
+retryFly.0=I have to be more careful.
+retryFly.1=I need to get to Santa in the fast way!
+retryFly.2=Now I have to make it!
+snowharder=Now It's snowing heavily
+snowend=Finally snowing has ended. Now we can save Santa. Let's go!
+snowing=What a bad luck! Snowing has started! Now the flight will get even harder. Now, where is the the switch button? Oh, here it is!
+->entity
+cleaner.bye=Hope you will find Santa soon!
+helper.bye=Good luck!
+
+
+

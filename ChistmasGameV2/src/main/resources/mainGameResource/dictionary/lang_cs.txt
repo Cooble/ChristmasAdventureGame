@@ -1,0 +1,242 @@
+﻿game.name=Vánoční hra
+joe.name=Karel
+button.play.name=Hrát
+button.settings.name=Nastavení
+button.exit.name=Odejít
+button.save.name=Uložit
+button.clear.name=Vymazat
+button.fullscreen.name=Fullscreen
+
+button.fullscreen.focus=Přepne fullscreen, (restartuje hru)
+button.lang.focus=Změní jazyk hry
+button.clear.focus=Odinstaluje a ukončí hru. Nelze vzít zpět!
+
+//intro
+->location.intro.stuff
+link.name=Otevře webový prohlížeč
+question_mark.name=Info o hře
+exclamation_mark.name=Tlačítka
+trash.name=Vymaže a ukončí hru (Drž a klikni na "Vymazat")
+
+<-
+
+true=Ano
+false=Ne
+language=Jazyk
+back=Zpět
+isLocked=Je to zamknuté.
+
+cleaner=Uklizeč
+helper0=Santův pomocník
+washy=Mýtko
+
+//items
+->item
+screwdriver.name=Šroubovák
+battery.name=Fajn baterka
+big_battery.name=Hodně fajn baterka
+blueprint.name=Modrotisk Quadracoptéry
+book.name=Kniha tvořivého muže
+brush.name=Kartáček na zuby
+electronics.name=Elektronika z PC
+fan.name=Větrák
+office_key.name=Santův klíč
+cap.name=Santova čepice
+cap.findkey=ÓÓ, Santa měl v čepici klíč. Zajímalo by mě, které dveře otevírá.
+cap.nomore=Už žádná další překvapení v Santově čepici.
+lux.name=Lux
+mail.name=Dopis
+pot.name=Hrnec s horkou vodou
+soldier.name=Vojáček
+soldier_brush.name=Vojáček s kartáčkem
+<-
+entity.joe.blueprint=Vidím, jak vyrobit quadracoptéru. Našel jsem to v Příručce, kde jsou vypsány materiály na výrobu.
+entity.joe.ingredients=Podívejme se na to. Na quadracoptéru potřebuju Baterku, asi dost velkou, dále budu potřebovat nějakou Elektroniku, taky Motor, jistě elektrický, a 4 vrtule. Zajímalo by mě, zdali dokážu získat všechny materiály na výrobu a kde bych mohl takovou věc vyrobit?
+entity.joe.idea=Nech mě přemýšlet. Potřebujeme zachránit Santu a ten byl unesen ve svých saních. Potřebuju podobný dopravní prostředek abych se k němu moh dostat, ale tady taková mašina asi nebude... nebo?
+entity.joe.quadraidea=ÓÓ... To je ono! To je přesně řešení problému jak se dostat k Santovi. S tím ho mohu zachránit, ale bojím se, že to nikde nenajdu.
+entity.joe.code=Hmm, to je divné. Nevypadá to jako hračky. Možná to je... ne, to by neudělal!
+entity.joe.nomoreBat=Žádné další baterky v Robotovi.
+entity.joe.craftquadra=No, teď máme všechen potřebný matroš, tak to pojdmě vyrobit. Jenom trochu kladiva, pily, svářečky....
+entity.joe.quadra_crafted=Dámy a pánové, konečně je to hotové. Teď potřebuju najít nějaký dobrý místo ke startu. Neboj se Santo, už jdu!
+entity.joe.nofit=Tak semhle teda nepatří.
+entity.joe.batteryNoFit=To mám dát snad pod čudlík?
+entity.joe.snowBalls=A jéje, to jsou ale velké sněhové koule. Rozhodně nechci dostat jednou z nich za krk!
+//LocationHome
+->location.home.
+stuff.socks.comment.0=Nemyslím si, že je dobrý nápad být blízko těchto smradlavých ponožek.
+stuff.socks.comment.1=Tyhle ponožky  jsou moje.
+stuff.socks.comment.2=Suším je nad horkými kamny.
+stuff.socks.comment.3=Připravuji je na Santovi dárky.
+stuff.tree.comment.0=Tenhle strom je pěkný.
+stuff.tree.comment.1=Sehnal jsem ho včera.
+stuff.calender.name=Kalendář
+stuff.calender.comment.0=Ještě jeden den!
+stuff.furnace.comment.0=Horká kamna.
+stuff.furnace.comment.1=Nehodlám se jich dotknout.
+stuff.furnace.comment.2=Sálá z nich příjemné teplo.
+stuff.pot.comment.0=Budoucí polívka.
+stuff.pot.comment.1=Každopádně to nepotřebuji.
+stuff.pot.comment.2=Vezmu si ho!
+stuff.pot.name=Hrnec s horkou vodou
+stuff.socks.name=Ponožky
+stuff.tree.name=Vánoční stromeček
+stuff.furnace.name=Kamna
+<-
+
+
+//LocationPostBox
+->location.post_box.stuff.postbox
+comment.0=Zamrzlá poštovní schránka.
+comment.1=Mňo, vypadá to, že je něco uvnitř.
+comment.2=Nemůžu se tam dostat!
+comment.3=Nádhera, jsem mazaný!
+success=Super!
+name=Poštovní schránka
+->location.post_box
+stuff.mail.name=Dopis
+<-
+loc.postbox.letter= Dear Joe, we are inviting you to Christmas party on 23rd Dec at the North pole. PS: Santa will be there too.                   Sincerely                   Santa's managers
+
+//party
+->location.party
+stuff.door.name=Dveře do Santovo kanclu
+stuff.door.comment.0=To je soukromé!
+stuff.door.comment.1={isLocked}
+stuff.switch.comment.0= Jenom vypínač
+stuff.switch.name=Vypínač
+unlocking=Ten klíč tam pasuje!
+unlocked=Tak schválně co tam má!
+comment.best=To je nejlepší párty, na který jsem kdy byl!
+isLocked={isLocked}
+noopendoor=Nejdřív musím najít nějaký světlo!
+
+<-
+
+//cottage_left
+->location.cottage_left.
+stuff.lever0.name=Elektrická krabička
+stuff.lever1.name=Pojistky
+stuff.lever.comment.0=Mňo, tady bych mohl nahodit elektriku.
+
+
+//garage
+->location.garage.
+stuff.calculator.name.0=Podivná kalkulačka
+stuff.calculator.name.1=Elektronický zámek garáže
+stuff.calculator.comment.0=Hmm, to vypadá jako zámek připojený ke dveřím do garáže!
+stuff.garage_door.comment.0=Santova garáž
+<-
+//calc
+location.calculator.stuff.toBottom2.name=Spodní strana
+entity.joe.calcNoPower=Vypadá to, že nemá žádnou šťávu! Možná kvůli tomu výpadku.
+entity.joe.santaAmnesia=Myslím, že takhle to asi neuhodnu. Kéž by měl Santa sklerózu a někam si to poznamenal.
+//calcBottom
+
+//path
+->location.path.
+stuff.santa_hat.comment.0=ÓÓ.. Tady něco je!
+stuff.santa_hat.comment.1=Je to červené.
+stuff.santa_hat.comment.2=To musí být Santova čepice!
+stuff.santa_hat.comment.3=Pravděpodobně ji upustil, aby ukázal, kudy ho unesli.
+stuff.santa_hat.pickup=Vezmu si ji.
+stuff.santa_hat.name=Něco
+//office
+->location.office.
+stuff.whiteboard.name=Bílá tabule
+stuff.office_window.name=Okno
+stuff.monitor.name=Santův monitor
+stuff.library.name=Poličky
+stuff.vase.name=Váza
+stuff.fan0.name=Větrák
+stuff.fan1.name=Další Větrák
+stuff.fan0.pickup=Mám rád větráky!
+stuff.fan1.pickup=Větráky jsou hustý!
+stuff.office_window.comment.0=Vidim tmu,        a stromy.
+stuff.office_window.comment.1=Zajímalo by mě, jak by to vypadalo, kdyby to ty stromy nebyly.
+stuff.pc_cover.comment.0=Je vypnutý.
+stuff.case.comment.0=Nudné poličky s ještě nudnějšími dokumenty.
+stuff.case.comment.1=Hmm...
+stuff.vase.comment.0=Váza bez kytek
+stuff.pc_cover.name=PC
+//library
+->location.library
+stuff.guidebook.name=Příručka
+stuff.guidebook.pickup=Mohla by se hodit!
+stuff.book_other.name=Krocan na 100 způsobů
+stuff.book_other.comment.0=Nemám hlad
+stuff.book_gifts.name=Dárky pro nejmenší
+stuff.book_gifts.comment.0=Nejsem nejmenší
+//garage_in
+->location.garage_in
+stuff.blueprint_no_place.comment.0=Tohle je Santův pracovní stůl.
+stuff.blueprint_no_place.comment.1=Tady dělával dárky.
+stuff.blueprint_placed.comment.0=Teď už vím, jak na to!
+stuff.blueprint_placed.comment.1=Pojdmě najít všechen ten matroš!
+stuff.blueprint.name.1=Modrotisk quadracoptéry
+stuff.blueprint.name.0=Stěna na nástroje
+comment.blueprintplaced.0=Sem patříš!
+<-
+entity.joe.noBlueprint=No jo, ale podle čeho bych to měl vyrobit?
+//hall
+->location.hall.
+stuff.kumbal_door.name=Dvířka do kumůrky
+stuff.kumbal_door.comment.0=Mohlo by tu něco být!
+<-
+entity.cleaner.busy=Nemámčas!
+entity.cleaner.brush=Takovej malej kartáček? Kdyby sám uklízel, tak bych si ho i vzal.
+
+
+//kumbal
+->location.kumbal.
+stuff.girrafe1.name=Žirafka
+stuff.girrafe3.name=Žirafka 2
+stuff.sysel0.name=Syslík
+stuff.sysel1.name=Další sysel
+stuff.sysel2.name=Panebože kolik syslů tu je?!
+stuff.robot.name=Robůtek
+stuff.lux.name=LUX
+stuff.soldier.name=Vojáček
+
+//hall2
+->location.hall2.
+stuff.bath_door_in.name=Koupelna
+<-
+entity.washy.canGo=Teď je koupelna volná!
+
+//bathroom
+->location.bathroom.
+stuff.shower.name=Sprcha
+stuff.shower.comment.0=Místo na odstranění špíny
+stuff.shower.comment.1=Teď ne!
+stuff.shower.comment.2=Nejdřív musim najít Santu!
+
+//cellar
+->location.cellar
+stuff.dark_fan.pickup=Á, tady seš!
+valve.name=Kolečko
+->entity
+washy.comment.hasWater=ÓÓÓ  konečně se můžu umýt!
+washy.comment.hadWater=To byla ale dobrá sprcha.
+washy.cold=Jee! Studená
+joe.drown=Nechci tu mít potopu!
+
+
+//quadratrip
+->entity.joe
+letsfly=Jdeme na to!
+falling.0=Jdeme k zemi!
+falling.1=Neee
+falling.2=Už zase?
+falling.3=Och
+retryFly.0=Musím být opatrnější
+retryFly.1=K Santovi se musím dostat rychle!
+retryFly.2=Tak teď už!
+snowharder=Tak teď sněží hustě!
+snowend=Konečně přestalo sněžit. Teď za Santou! Hurrrá.
+snowing=To je ale pech! Začlo sněžit! Teď ten let bude mnohem težší!. No, kde je zapalování? A tady je!
+->entity
+cleaner.bye=Doufám, že Santu brzo najdeš!
+helper.bye=Hodně štěstí!
+
+
+

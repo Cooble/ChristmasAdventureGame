@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<location BACKGROUND="post_box" LOCID="post_box">
+    <backgroundSound volume="0.5">arctic_wind</backgroundSound>
+    <stuffs>
+        <postbox height="35" width="45" x="259" y="39">
+            <bitmap scale="1.0" x="254" y="36">postbox</bitmap>
+        </postbox>
+        <mail height="16" width="16" x="264" y="56">
+            <bitmap scale="1.0" x="264" y="56">mail</bitmap>
+            <toCome x="273" y="140"/>
+        </mail>
+    </stuffs>
+    <arrows>
+        <toHome height="182" imageX="0" imageY="148" location="home" width="18" x="-4" y="1">
+            <pos>LEFT</pos>
+            <size>SMALL</size>
+            <toCome x="-21" y="179"/>
+            <toFinal right="false" x="303" y="177"/>
+        </toHome>
+    </arrows>
+</location>

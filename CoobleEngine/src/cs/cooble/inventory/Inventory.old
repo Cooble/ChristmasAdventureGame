@@ -1,0 +1,492 @@
+package cs.cobble.game.inventory;
+
+import com.sun.istack.internal.Nullable;
+import cs.cobble.game.Game;
+import cs.cobble.game.graphics.Bitmap;
+import cs.cobble.game.graphics.MultiBitmapProvider;
+import cs.cobble.game.inventory.item.ItemStack;
+import cs.cobble.game.window.Tickable;
+import cs.cobble.game.world.*;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ * Created by Matej on 14.12.2015.
+ */
+public class Inventory implements Tickable, MultiBitmapProvider, MouseEventConsumer, NBTSaveable {
+
+    //private final int ITEM_ARRAY_SIZE=20;
+
+    private ItemContainer[] itemContainers;
+    private ArrayList<ItemStack> items;
+    private Bitmap[] bitmaps;
+
+    private IActionListener[] actionListeners;
+    private boolean isShown;
+    private boolean isOpening;
+    private boolean isClosing;
+    private boolean isLocked;//if true inventory cannot be opened
+
+    private Rectangle rectangle;
+
+    private int posX;
+    private int itemY;
+    private boolean hidden;
+    private Bitmap bitmapSlots;
+
+    private final int BITMAP_ITEM_IN_HAND = 4;
+    private final int BITMAP_ITEMSLOTS = 0;
+    private final int BITMAP_CONTAINER_0 = 1;
+    private final int BITMAP_CONTAINER_1 = 2;
+    private final int BITMAP_CONTAINER_2 = 3;
+
+    private final int CONTAINER_0 = 0;
+    private final int CONTAINER_1 = 1;
+    private final int CONTAINER_2 = 2;
+    private final int CONTAINER_IN_HAND = 3;
+
+    public Inventory() {
+        posX = -21;
+
+
+        items = new ArrayList<>();
+        bitmapSlots = Bitmap.getBitmap("gui/slots");
+        rectangle = new Rectangle(0, 0, 21, 90);
+        actionListeners = new IActionListener[5];
+        itemContainers = new ItemContainer[4];
+        bitmaps = new Bitmap[5];
+        bitmaps[BITMAP_ITEMSLOTS] = bitmapSlots;
+        actionListeners[0] = new IActionListener() {
+            Rectangle rectangle = new Rectangle(2, 2, 17, 9);
+
+            @Override
+            public Rectangle getRectangle() {
+                return rectangle;
+            }
+
+            @Override
+            public void onClicked(int x, int y, boolean right_button, boolean released, ItemStack item) {
+                goUp();
+            }
+        };
+        actionListeners[1] = new IActionListener() {
+            Rectangle rectangle = new Rectangle(2, 12, 17, 17);
+
+            @Override
+            public Rectangle getRectangle() {
+                return rectangle;
+            }
+
+            @Override
+            public void onClicked(int x, int y, boolean right_button, boolean released, ItemStack item) {
+                onItemSlotClick(0, right_button);
+            }
+
+            @Override
+            public void onFocusGiven() {
+                onItemSlotFocusGiven(0);
+            }
+
+            @Override
+            public void onFocusLost() {
+                onItemSlotFocusLost(0);
+            }
+        };
+        actionListeners[2] = new IActionListener() {
+            Rectangle rectangle = new Rectangle(2, 36, 17, 17);
+
+            @Override
+            public Rectangle getRectangle() {
+                return rectangle;
+            }
+
+            @Override
+            public void onClicked(int x, int y, boolean right_button, boolean released, ItemStack item) {
+                onItemSlotClick(1, right_button);
+            }
+
+            @Override
+            public void onFocusGiven() {
+                onItemSlotFocusGiven(1);
+            }
+
+            @Override
+            public void onFocusLost() {
+                onItemSlotFocusLost(1);
+            }
+        };
+        actionListeners[3] = new IActionListener() {
+            Rectangle rectangle = new Rectangle(2, 61, 17, 17);
+
+            @Override
+            public Rectangle getRectangle() {
+                return rectangle;
+            }
+
+            @Override
+            public void onClicked(int x, int y, boolean right_button, boolean released, ItemStack item) {
+                onItemSlotClick(2, right_button);
+            }
+
+            @Override
+            public void onFocusGiven() {
+                onItemSlotFocusGiven(2);
+            }
+
+            @Override
+            public void onFocusLost() {
+                onItemSlotFocusLost(2);
+            }
+        };
+        actionListeners[4] = new IActionListener() {
+            Rectangle rectangle = new Rectangle(2, 79, 17, 9);
+
+            @Override
+            public Rectangle getRectangle() {
+                return rectangle;
+            }
+
+            @Override
+            public void onClicked(int x, int y, boolean right_button, boolean released, ItemStack item) {
+                goDown();
+            }
+        };
+        actionListeners[1] = new MouseFocusGainIActionListenerWrapper(actionListeners[1]);
+        actionListeners[2] = new MouseFocusGainIActionListenerWrapper(actionListeners[2]);
+        actionListeners[3] = new MouseFocusGainIActionListenerWrapper(actionListeners[3]);
+
+        for (int i = 0; i < 3; i++) {
+            itemContainers[i] = new ItemContainer(i, 2, 24 * i);
+        }
+        itemContainers[CONTAINER_IN_HAND] = new ItemContainer(CONTAINER_IN_HAND, 0,0);
+
+        loadBitmaps();
+
+    }
+
+    @Override
+    public void tick() {
+        if (isOpening) {
+            posX++;
+            if (posX == 0)
+                isOpening = false;
+        } else if (isClosing) {
+            posX--;
+            if (posX == -21) {
+                isClosing = false;
+                isShown = false;
+                hidden = true;
+            }
+        }
+
+
+        //moving of bitmap item
+        bitmapSlots.setOffset(posX, 0);
+        for (int i = 0; i < 3; i++) {
+            ItemContainer container = itemContainers[i];
+            container.setOffset(2 + posX, 12 + 24 * i);
+        }
+        loadBitmaps();
+    }
+
+    public Bitmap[] getBitmaps() {
+        return bitmaps;
+    }
+
+    @Override
+    public boolean shouldRender() {
+        return isShown;
+    }
+
+    public void onStart() {
+        hidden = false;
+        isShown = true;
+        isOpening = true;
+
+    }
+
+    public void onStop() {
+        isClosing = true;
+    }
+
+    private void goUp() {
+        if (itemY != 0) {
+            itemY--;
+            addRightItemsToContainers();
+        }
+    }
+
+    private void goDown() {
+        if (itemY != items.size()) {
+            itemY++;
+            addRightItemsToContainers();
+
+        }
+    }
+
+    /**
+     * called after down or up arrow
+     */
+    private void addRightItemsToContainers() {
+        for (int i = 0; i < 3; i++) {
+            if (itemY + i < items.size()) {
+                ItemContainer container = itemContainers[i];
+                ItemStack itemik = items.get(itemY + i);
+                container.setItemStack(itemik);
+            }
+        }
+    }
+
+    private void loadBitmaps() {
+        bitmaps[BITMAP_CONTAINER_0] = itemContainers[CONTAINER_0].getCurrentBitmap();
+        bitmaps[BITMAP_CONTAINER_1] = itemContainers[CONTAINER_1].getCurrentBitmap();
+        bitmaps[BITMAP_CONTAINER_2] = itemContainers[CONTAINER_2].getCurrentBitmap();
+        bitmaps[BITMAP_ITEM_IN_HAND] = itemContainers[CONTAINER_IN_HAND].getCurrentBitmap();
+    }
+
+    private void onItemSlotClick(int number, boolean right) {
+        int index = itemY + number;
+        ItemStack itemInHand = getItemInHand();
+
+        if (itemInHand != null) {
+            if (index < items.size()) {// pokud kilkam na item
+                if (!right) {//prohodit
+                    ItemStack item = items.get(index);
+                    items.set(index, itemInHand);
+                    setItemInHand(item);
+                } else {//spojit itemy do jednoho
+                    ItemStack item = items.get(index).onRightClickOnItem(itemInHand);
+                    if (item != null) {//if both items which were assembled will be deleted and will be created new item
+                        setItemInHand(item);
+                        items.remove(index);
+                        items.removeAll(Collections.singleton(null));
+                    }
+                }
+
+            } else {//strcit item do slotu
+                putItemInHandBack();
+
+            }
+        } else {
+            if (!right) {
+                setItemInHand(itemContainers[number].getItemStack());
+                items.set(index, null);
+                itemContainers[number].setItemStack(null);
+                items.removeAll(Collections.singleton(null));
+                loadBitmaps();
+
+
+
+            } else {
+                itemContainers[number].getItemStack().onClickedRightOnThis();
+            }
+        }
+        addRightItemsToContainers();//save the changes to graphical interface
+
+    }
+
+    private void onItemSlotFocusGiven(int number) {
+        int index = itemY + number;
+        if (index < items.size())
+            Game.textManager.setTextLine(items.get(index).ITEM.getTextName());
+
+    }
+
+    private void onItemSlotFocusLost(int number) {
+        Game.textManager.setText(null);
+    }
+
+    /**
+     * if event was consumed return true
+     *
+     * @return
+     */
+    private boolean onClick(int x, int y, boolean right, boolean relesed) {
+        x /= Game.renderer.PIXEL_SIZE;
+        y /= Game.renderer.PIXEL_SIZE;
+        if (!isShown || hidden)
+            return false;
+        else if (rectangle.contains(x, y)) {
+            for (IActionListener actionListener : actionListeners) {
+                if (actionListener.getRectangle().contains(x, y)) {
+                    if (!relesed) {
+                        ItemStack item = null;
+                        if (Game.getWorld().getInventory().isOpen())
+                            item = Game.getWorld().getInventory().getItemInHand();
+                        actionListener.onClicked(x, y, right, false, item);
+                    }
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    /**
+     * @return true if moving on inventory space
+     */
+    public boolean move(int x, int y) {
+        x /= Game.renderer.PIXEL_SIZE;
+        y /= Game.renderer.PIXEL_SIZE;
+
+        if (isShown && getItemInHand() != null) {
+            if (!hidden) {
+                if (x > 24) {
+                    hideOrNot();
+                }
+            } else {
+                if (x < 1) {
+                    hideOrNot();
+                }
+            }
+        }
+
+        if (!isShown && hidden)
+            return false;
+
+
+        itemContainers[CONTAINER_IN_HAND].setOffset(x - 17/2, y - 17/ 2);
+
+        for (IActionListener iActionListener : actionListeners) {
+            iActionListener.mouseMove(x, y);
+        }
+        return rectangle.contains(x, y);
+    }
+
+    public void setItemInHand(@Nullable ItemStack itemInHand) {
+
+        itemContainers[CONTAINER_IN_HAND].setItemStack(itemInHand);
+        hidden = false;
+        items.removeAll(Collections.singleton(null));
+
+    }
+
+    public ItemStack getItemInHand() {
+        return itemContainers[CONTAINER_IN_HAND].getItemStack();
+    }
+
+    public void addItem(ItemStack item) {
+        items.add(item);
+        addRightItemsToContainers();
+        items.removeAll(Collections.singleton(null));
+    }
+
+    public void setOnOrOff() {
+        if (isLocked)
+            return;
+
+        if (isShown)
+            onStop();
+        else
+            onStart();
+    }
+
+    /**
+     * hide inventory graphically without fading
+     */
+    public void setOffImmediately() {
+        isShown = false;
+        posX = -21;
+    }
+
+    public boolean isLocked() {
+        return isLocked;
+    }
+
+    /**
+     * if locked it will call setOffImmediately()
+     * then it cannot be opened until setting lock(true)
+     *
+     * @param isLocked
+     */
+    public void lock(boolean isLocked) {
+        if (isLocked && !this.isLocked) {
+            setOffImmediately();
+        }
+        this.isLocked = isLocked;
+    }
+
+    @Override
+    public boolean consume(int x, int y, int state, boolean released) {
+        if (!isShown)
+            return false;
+        if (state == MouseEventConsumer.STATE_MOUSE_MOVED) {
+            move(x, y);
+            return false;
+        } else if (state == MouseEventConsumer.STATE_CLICKED_LEFT) {
+            return onClick(x, y, false, released);
+        } else if (state == MouseEventConsumer.STATE_CLICKED_RIGHT) {
+            return onClick(x, y, true, released);
+        }
+        return false;
+    }
+
+    public void setOn() {
+        if (isLocked)
+            return;
+        if (!isShown)
+            onStart();
+    }
+
+    public void setOff() {
+        if (isLocked)
+            return;
+        if (isShown)
+            onStop();
+    }
+
+    @Override
+    public void readFromNBT(NBT nbt) {
+        Integer size = nbt.getInteger("itemsNumber");
+        if (size == null)
+            return;
+        for (int i = 0; i < size; i++) {
+            ItemStack itemStack = new ItemStack(null);
+            itemStack.readFromNBT(nbt.getNBT("itemstack." + i));
+            addItem(itemStack);
+        }
+    }
+
+    @Override
+    public void writeToNBT(NBT nbt) {
+        int realSize = 0;
+        for (ItemStack item : items) {
+            if (item != null) {
+                NBT itemNbt = new NBT();
+                item.writeToNBT(itemNbt);
+                nbt.putNBT("itemstack." + realSize, itemNbt);
+                realSize++;
+            }
+        }
+        nbt.putInteger("itemsNumber", realSize);
+    }
+
+    @Override
+    public boolean isDirty() {
+        return false;
+    }
+
+    public boolean isOpen() {
+        return isShown;
+    }
+
+    public void hideOrNot() {
+        hidden = !hidden;
+        if (hidden)
+            posX = -21;
+        else posX = 0;
+    }
+
+    public void putItemInHandBack() {
+        ItemStack itemInHand = getItemInHand();
+        if (itemInHand != null) {
+            addItem(itemInHand);
+            setItemInHand(null);
+            addRightItemsToContainers();
+            hidden = false;
+            items.removeAll(Collections.singleton(null));
+        }
+    }
+}

@@ -1,0 +1,16 @@
+->dialog.partyDialog
+howUnest=How could they kidnapp him?
+opinionvydirat=Maybe they want to force him to make presents for them!
+greeting=Hello
+WhoCanUnest=Who could done such a thing?
+SantaGotLost=Santa got lost!
+needGo=I have to go!
+WhyUnest=Why would they kidnapp him?
+HowUnestAnswer=They switched the lights off, throw some bag on him and that was it. He didn't have chance to defend. It was so fast!
+seeyou=Seeya
+how=How?
+WeMustHelp=We must help him!
+MustHaveUnest=The must have kidnapped him!
+whatHappened=What has happened?
+DontWorry=But don't worry, I'm on my way!
+MustBeProfesionals=They must have been professionals!

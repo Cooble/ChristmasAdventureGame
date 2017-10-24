@@ -1,0 +1,11 @@
+->dialog.semiEnd
+endAnswer=See you next time:D
+whyMultiple=Why multiple episodes?
+thankAnswer=Just share this game with everyone you know. And if you are (Java programmer/Graphic designer/Sound man) and you want to be part of this project please send me a messeage on ChristmasAdventureCooble@gmail.com, I will be glad.
+someBugs=Some bugs?
+thank=How can I thank you?
+end=Let's end game now!
+someBugsAnswer=I'm not the god so I make mistakes. If you have experienced any please send your feedback (with description of bug) on email ChristmasAdventureCooble@gmail.com. I will do my best to repair it!
+whyMultipleAnswer=Why multiple episodes you may ask? Well it's because development is really slow proccess. It has taken huge time to make it to this point. I have spend 2 years developing it, and I'm still at start. Well I hope I will get more people to have them worked on it.
+first=I'm afraid that this journey will take some time. Santa can be really far away. Only thing I hope is that my battery won't get depleted. Don't worry I will tell you when I get there. See you later!
+second=Well that's the end of episode 1 of this game. I (developer) hope you have enjoyed it and if(true) be sure to share with everyone you know. Don't worry I'm just working on the 2nd episode. 

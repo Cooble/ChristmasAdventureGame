@@ -1,0 +1,6 @@
+->dialog.startPartyDialog
+dontSpeak=Tak nemluv a tanči jak nejlíp dokážeš!
+iLoveSanta=Jseš úžasnej Santo!
+bestPartyEver=Nejlepší párty ever!
+haveFun=Užívejte si to! Je to jenom jednou za rok!
+bestParty=To je nejlepší párty na který jsem kdy byl!

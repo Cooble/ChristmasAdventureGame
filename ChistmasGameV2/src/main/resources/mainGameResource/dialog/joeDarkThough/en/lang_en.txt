@@ -1,0 +1,3 @@
+->dialog.joeDarkThough
+needLight=I can't see anything! I have to find some light!
+whatHappened=Oh no! What has happened?

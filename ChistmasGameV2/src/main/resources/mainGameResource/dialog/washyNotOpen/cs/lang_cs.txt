@@ -1,0 +1,7 @@
+->dialog.washyNotOpen
+no=Co? Ty nezdvořáku!
+washyWho=Jmenuju se Mýtko, jsem Santův bratranec a hrozně rád se myju!
+GetOff=Vypadni!
+noGoOut=Bohužel nemohu, zrovna jsem se mydlil, když najednou vypadla elektrika. Neopustím koupelnu dokavaď tu nebude zase voda.
+whoThere=Kdo tam?
+goOut=Mohl bys odejít? 

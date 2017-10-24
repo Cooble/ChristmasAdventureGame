@@ -1,0 +1,7 @@
+->dialog.cleanerLuxYes
+see=Vidíš?
+what=Co to je? Vypadá to na nějakou hračku cos ukradl z mého kumbálu, ale...
+thank=Díky moc! Jsi vskutku dobrý člověk. Klidně si teď můžeš vzít ten lux, už ho nebudu potřebovat.
+strech=Jenom to takhle natáhni.
+great=To je super. Teď už nemusím vůbec pracovat, Všechno udělá tadyten podivnej roztomilej pomocníček. Teď se můžu starat o děti, když bych musel být v práci.
+welcome=Nemáš zač.

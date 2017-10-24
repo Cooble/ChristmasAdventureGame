@@ -1,0 +1,7 @@
+->dialog.washyNotOpen
+no=What?! You churl!
+washyWho=I am called Washy. I am Santa's cousin and I really like washing.
+GetOff=Get off now!
+noGoOut=No, I cannot. I was soaping my body when suddenly blackout happened. I won't leave the bathroom until there is water again!
+whoThere=Who's there?
+goOut=Can you go out? I'd like to get to bathroom.

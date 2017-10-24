@@ -1,0 +1,8 @@
+->dialog.cleanerLuxNo
+whereGoing=Hej! Kam si jako myslíš, že jdeš?
+fromKumbal=Jenom z kumbálu, nějaký problém?
+bigProblem=Velkej problém! Proč máš TY u sebe MŮJ lux?
+niceTry=Dobrej pokus!
+children=Musím se starat o děti.. A ty mi tady kradeš můj jedinej nástroj!
+dontSay=Nic mi neříkej! Já přesně vím cos chtěl udělat! Chtěls ho ukrást! Myslíš taky někdy na někoho jiného než na sebe! Ty sobče!
+just=No, protože...

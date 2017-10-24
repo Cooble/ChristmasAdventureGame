@@ -1,0 +1,11 @@
+->dialog.semiEnd
+endAnswer=Tak zas někdy:D
+whyMultiple=Proč ty díly?
+thankAnswer=Prostě sdílejte tuhle hru se všema. A pokud jste (Java programátoř/grafický designer/ nebo frajer na zvuk) a chtěli byste se účastnit vývoje, prosím pošlete mi zprávu na email ChristmasAdventureCooble@gmail.com, dík
+someBugs=Chyby?
+thank=Jak poděkovat
+end=Ukončit hru
+someBugsAnswer=Nejsem bůh, takže pokud jste našli nějakou tu chybičku určitě napište (popis chyby) na e-mail ChristmasAdventureCooble@gmail.com. Pokusím se to rychle vyřešit!
+whyMultipleAnswer=Proč víc dílů? No protože vývoj hry je dost dlouhý proces. Trvalo mi to dost dlouho dostat se až sem. Strávil jsem nad tím 2 roky a teprve začínám. Každopádně doufám, že najdu víc lidí, co by pomohli.
+first=Obávám se, že tato cesta mi chvíli zabere. Santa může bejt dost daleko. Jenom doufám, že se mi mezitim nevybije baterka. Neboj, dám ti vědět, až tam budu. Zatim.
+second=Tak, tohle je konec dílu 1 této hry. Já (vývojář) doufám, že jste si hru užili a pokud ano, určitě ji sdílejte se všemi co znáte. Nebojte, už pracuju na dílu 2.

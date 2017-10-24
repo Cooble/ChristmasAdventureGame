@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<location BACKGROUND="quadratrip" LOCID="quadratrip">
+    <stuffs>
+        <quadracopter height="38" width="33" x="180" y="141">
+            <bitmap delay="7" scale="1.0" type="SAW" x="136" y="117">quadracopter</bitmap>
+            <toCome x="173" y="182"/>
+        </quadracopter>
+        <joe height="0" width="0" x="180" y="107">
+            <bitmap scale="1.0" x="180" y="107">joeFlying</bitmap>
+        </joe>
+        <wallpaper0 height="0" width="0" x="0" y="0">
+            <bitmap scale="1.0" x="0" y="0">wallpaper</bitmap>
+        </wallpaper0>
+        <wallpaper1 height="0" width="0" x="0" y="0">
+            <bitmap scale="1.0" x="0" y="0">wallpaper</bitmap>
+        </wallpaper1>
+        <arrow_guide height="78" width="125" x="176" y="6">
+            <bitmap scale="1.0" x="176" y="6">arrowGuide</bitmap>
+        </arrow_guide>
+    </stuffs>
+    <arrows/>
+</location>

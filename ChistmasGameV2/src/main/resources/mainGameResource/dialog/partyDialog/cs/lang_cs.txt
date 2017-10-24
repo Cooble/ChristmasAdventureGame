@@ -1,0 +1,16 @@
+->dialog.partyDialog
+howUnest=Jak ho mohli unést?
+opinionvydirat=Třeba ho chtěji vydírat a donutit ho aby vyráběl dárky i pro ně :(
+greeting=Ahoj
+WhoCanUnest=Kdo to mohl udělat?
+SantaGotLost=Santa zmizel!
+needGo=Uz musim jít
+WhyUnest=Proc by ho unášeli?
+HowUnestAnswer=Zhasli světla hodili na něj pytel a bylo... Neměl nejmensi šanci se bránit. Bylo to tak rychlé!!
+seeyou=Zatim
+how=Jak?
+WeMustHelp=Musíme mu pomoct!
+MustHaveUnest=Museli ho unést!
+whatHappened=Co se to tu stalo!
+DontWorry=Neboj, už jdu na to!
+MustBeProfesionals=Museli to být profesionálové
