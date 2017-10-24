@@ -2,7 +2,7 @@
 Just simple Java Adventure Game.
 Using Slick2D graphics engine.
 
-Everything is working and ready to be extended, commented, and maybe to add even a brand new episode.
+Everything is working and ready to be extended, commented, and maybe to add even a brand new episodes.
 
 # Current Episodes:
 
