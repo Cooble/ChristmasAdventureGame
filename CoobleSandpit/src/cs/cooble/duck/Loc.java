@@ -12,6 +12,8 @@ import java.util.ArrayList;
  * Created by Matej on 19.5.2017.
  */
 public class Loc implements ListViewItem {
+    public static final String SRC_FOLDER = "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/";
+
     String locid;
     Bitmap back;
     Bitmap fore;
@@ -264,20 +266,22 @@ public class Loc implements ListViewItem {
         }
         NamedNodeMap map = root.getAttributes();//loading loc atributes
         out.setLocid(map.getNamedItem("LOCID").getNodeValue());
+
+        String texturesFolder =SRC_FOLDER+"textures/";
         try {
-            out.setBack(Bitmap.load("C:/Users/Matej/AppData/Roaming/ChristmasGame\\res\\textures\\location/" + map.getNamedItem("BACKGROUND").getNodeValue() + ".png"));
+            out.setBack(Bitmap.load(texturesFolder+"location/" + map.getNamedItem("BACKGROUND").getNodeValue() + ".png"));
         } catch (Exception ingored) {
         }
         try {
-            out.setFore(Bitmap.load("C:/Users/Matej/AppData/Roaming/ChristmasGame\\res\\textures\\location/" + map.getNamedItem("FOREGROUND").getNodeValue() + ".png"));
+            out.setFore(Bitmap.load(texturesFolder+"location/" + map.getNamedItem("FOREGROUND").getNodeValue() + ".png"));
         } catch (Exception e) {
         }
         try {
-            out.setShadow(Bitmap.load("C:/Users/Matej/AppData/Roaming/ChristmasGame\\res\\textures\\shadow/" + map.getNamedItem("SHADOW").getNodeValue() + ".png"));
+            out.setShadow(Bitmap.load(texturesFolder+"shadow/" + map.getNamedItem("SHADOW").getNodeValue() + ".png"));
         } catch (Exception e) {
         }
         try {
-            out.setBoolmap(Bitmap.load("C:/Users/Matej/AppData/Roaming/ChristmasGame\\res\\textures\\bool/" + map.getNamedItem("BOOLMAP").getNodeValue() + ".png"));
+            out.setBoolmap(Bitmap.load(texturesFolder+"bool/" + map.getNamedItem("BOOLMAP").getNodeValue() + ".png"));
         } catch (Exception e) {
         }
         try

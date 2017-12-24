@@ -1,5 +1,6 @@
 package cs.cooble.tree;
 
+import cs.cooble.duck.Loc;
 import cs.cooble.fx.Main;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -519,7 +520,7 @@ public class Tree {
 
     public static File saveFileAs(String filter,String suffix){
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File("C:\\Users\\Matej\\AppData\\Roaming\\ChristmasGame\\dialog"));
+        fileChooser.setInitialDirectory(new File(Loc.SRC_FOLDER+"dialog"));
 
         //Set extension filter
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(filter,suffix);
@@ -531,7 +532,7 @@ public class Tree {
     }
     public static File openFile(String filter,String suffix){
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File("C:\\Users\\Matej\\AppData\\Roaming\\ChristmasGame\\dialog"));
+        fileChooser.setInitialDirectory(new File(Loc.SRC_FOLDER+"dialog"));
 
         //Set extension filter
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter(filter,suffix);
