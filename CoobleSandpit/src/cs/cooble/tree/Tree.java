@@ -316,6 +316,7 @@ public class Tree {
         });
 
         leftBox.getChildren().addAll(comboBox, addSpeaker);
+        //ogogo
 
         MenuItem delete = new MenuItem("delete");
         delete.setOnAction(remove.getOnAction());
