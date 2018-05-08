@@ -16,7 +16,10 @@ import cs.cooble.saving.Saver;
 import cs.cooble.window.Tickable;
 import org.newdawn.slick.Graphics;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 
 /**
@@ -39,6 +42,7 @@ public class LauncherV2 implements Tickable, Renderable, PreInitEvent, InitEvent
         GameCore gameCore = null;
         try {
             Game.saver = new Saver(Game.gameName);
+            Game.saver.setInjectedResClass(LauncherV2.class);
             Game.saver.makeDefaultFoldersFiles();
             Game.readSettingsNBT(Game.saver.loadSettingsNBT());
             Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH+"gui/icon16.png"));

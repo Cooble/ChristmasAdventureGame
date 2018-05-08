@@ -55,12 +55,15 @@ public abstract class Location implements Tickable, MouseEventConsumer, NBTSavea
     }
     protected final Stuff getStuffByID(String id){
         id= generateStuffName(id);
+        if(stuffs.size()==0)
+            System.out.println("we are low");
         for (Stuff stuff : stuffs) {
+            System.err.println("listing full names "+stuff.getFullName());
             if (stuff.getFullName().equals(id)) {
                 return stuff;
             }
         }
-        Stuff stuff = new Stuff(generateStuffName(id));
+        Stuff stuff = new Stuff(id);
         addStuff(stuff);
         return stuff;
     }

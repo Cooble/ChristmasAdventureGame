@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Created by Matej on 19.5.2017.
  */
 public class Loc implements ListViewItem {
-    public static final String SRC_FOLDER = "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/";
+    public static final String SRC_FOLDER = "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/res/";
 
     String locid;
     Bitmap back;

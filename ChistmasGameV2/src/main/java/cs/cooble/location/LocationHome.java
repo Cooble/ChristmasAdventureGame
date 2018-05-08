@@ -53,13 +53,12 @@ public final class LocationHome extends Location {
     @Override
     public void loadTextures() {
 
+        System.out.println("loading pot "+this);
         //pot2
         StuffToCome pot = (StuffToCome) getStuffByID("pot");
         String[] strings = StringStream.getArray(getLocationPrefix() + ".stuff.pot.comment.");
         pot.setLore(new Supplier<String>() {
-
             int indexik;
-
             @Override
             public String get() {
                 indexik++;

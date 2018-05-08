@@ -7,6 +7,7 @@ import cs.cooble.event.UserInput;
 import cs.cooble.window.Tickable;
 import cs.cooble.xml.XMLManager;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -163,14 +164,15 @@ public final class LocationManager implements Tickable, NBTSaveable, TextureLoad
         for (String locName : locationNames) {
             boolean hasFoundLocInSrc = false;
             for (Location location : locations) {
-                if (location.getLOCID().equals(locName)) {//this loc has xml
-                    LocationFactory.parseLocation(manager.loadDocument(currentLocModule.MID, locName), location,locName);
+                if (location.getLOCID().equals(new File(locName).getName())) {//this loc has xml
+                    LocationFactory.parseLocation(manager.loadDocument(currentLocModule.MID, locName), location);
                     hasFoundLocInSrc = true;
                     break;
                 }
             }
-            if (!hasFoundLocInSrc) {//this loc only exists as xml
-                locationsToAdd.add(LocationFactory.parseLocation(manager.loadDocument(currentLocModule.MID, locName), null,locName));
+            if (!hasFoundLocInSrc) {//this loc only exists as xml and does not have .java file
+                System.out.println("Hasnt found loc in xml :" +currentLocModule.MID + " --- "+locName);
+                locationsToAdd.add(LocationFactory.parseLocation(manager.loadDocument(currentLocModule.MID, locName), null));
 
             }
 

@@ -4,6 +4,7 @@ import com.sun.istack.internal.Nullable;
 import cs.cooble.core.Game;
 import cs.cooble.logger.Log;
 import cs.cooble.world.NBT;
+import org.lwjgl.Sys;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -38,6 +39,11 @@ public class Saver {
     public String DIALOG_PATH;
     public final String DICTIONARY_PATH;
 
+    private Class injectedResClass;
+
+    public void setInjectedResClass(Class injectedResClass) {
+        this.injectedResClass = injectedResClass;
+    }
 
     public Saver(String gameName) {
         GAME_PATH = APPDATA + "/" + gameName + "/";
@@ -293,10 +299,10 @@ public class Saver {
 
     public void makeTempFolder(int W, int H) {
         temporaries = new ArrayList<>();
-        if(!new File(GAME_PATH+"/res/textures/").exists()){
+        if (!new File(GAME_PATH + "/res/textures/").exists()) {
             //resizeImagesToTemp(getRes() + "/textures/shadow_src/", new File(GAME_PATH + "/res/textures/shadow"), W, H, true);
-          //  resizeImagesToTemp(getRes() + "/textures/location_src/", new File(GAME_PATH + "/res/textures/location"), W, H, false);
-          //  resizeImagesToTemp(getRes() + "/textures/bool_src/", new File(GAME_PATH + "/res/textures/bool"), W, H, false);
+            //  resizeImagesToTemp(getRes() + "/textures/location_src/", new File(GAME_PATH + "/res/textures/location"), W, H, false);
+            //  resizeImagesToTemp(getRes() + "/textures/bool_src/", new File(GAME_PATH + "/res/textures/bool"), W, H, false);
         }
     }
 
@@ -421,7 +427,7 @@ public class Saver {
         File file = null;
         try {
             file = new File(url.getFile());
-            if(!file.exists())
+            if (!file.exists())
                 throw new Exception();
         } catch (Exception e) {
             if (showException) {
@@ -434,6 +440,7 @@ public class Saver {
 
     public InputStream getResourceAsStream(String path, boolean showException) {
         path = makeResString(path);
+        final String oldPath = path;
         InputStream out = null;
 
         final InputStream in = getContextClassLoader().getResourceAsStream(path);
@@ -450,7 +457,7 @@ public class Saver {
                     out = getContextClassLoader().getResourceAsStream(path);
 
                 if (showException && out == null)
-                    new Exception("Cannot load resource as stream: " + path).printStackTrace();
+                    new Exception("Cannot load resource as stream: " + oldPath).printStackTrace();
             }
         }
         return out;
@@ -462,7 +469,11 @@ public class Saver {
     }
 
     public ClassLoader getContextClassLoader() {
-        return Thread.currentThread().getContextClassLoader();
+        // return Thread.currentThread().getContextClassLoader();
+        if (injectedResClass != null) {
+            return injectedResClass.getClassLoader();
+        }
+        return Saver.class.getClassLoader();
     }
 
     private FileSystem fileSystem;
@@ -474,6 +485,7 @@ public class Saver {
      */
     public List<String> findResourceC(String path, @Nullable String name) {
         path = makeResString(path);
+
         try {
             URI uri = getContextClassLoader().getResource(path).toURI();
             ArrayList<String> out = new ArrayList<>();
@@ -505,14 +517,21 @@ public class Saver {
                         out.add(pathik);
                 }
             }
-            return out;
+            ArrayList<String> real = new ArrayList<>();
+            for (String anOut : out)
+                if (!anOut.replace("\\", "/").endsWith(path)&&!anOut.replace("\\","/").concat("/").endsWith(path))
+                    if (!anOut.replace("\\", "/").concat("/").endsWith(path))//or use uri as reference to prevent same folder in which is searched for subfolders listed as a subfolder
+                        real.add(anOut.replace("\\", "/"));
+
+
+            return real;
         } catch (Exception e) {
             return new ArrayList<>();
         }
     }
 
     public boolean existPath(String path) {
-        InputStream i = getResourceAsStream(path,false);
+        InputStream i = getResourceAsStream(path, false);
         return i != null;
 
     }

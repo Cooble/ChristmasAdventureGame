@@ -1,6 +1,7 @@
 package cs.cooble.graphics;
 
 import cs.cooble.core.Game;
+import cs.cooble.logger.Log;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
@@ -27,6 +28,10 @@ public class BitmapStack implements BitmapProvider {
 
     public BitmapStack(Bitmap... bitmaps) {
         this.bitmaps = bitmaps;
+        for (Bitmap bitmap : bitmaps) {
+            if (bitmap == null)
+                Log.println("Cannot load bitmapstack, bitmap is null! ", Log.LogType.ERROR);
+        }
         checkIfSameDimensions();
     }
 
@@ -100,6 +105,9 @@ public class BitmapStack implements BitmapProvider {
 
         for (int i = 0; i < dir.length; i++) {
             bitmaps[i] = Bitmap.get(dir[i]);
+            if(bitmaps[i]==null){
+                Log.println("Cannot load bitmapstack, bitmap is null! ", Log.LogType.ERROR);
+            }
         }
         return new BitmapStack(bitmaps);
 
@@ -119,6 +127,9 @@ public class BitmapStack implements BitmapProvider {
         Bitmap[] bitmaps = new Bitmap[size];
         for (int i = 0; i < bitmaps.length; i++) {
             bitmaps[i] = Bitmap.get(dir + "/" + i);
+            if(bitmaps[i]==null){
+                Log.println("Cannot load bitmapstack, bitmap is null! ", Log.LogType.ERROR);
+            }
         }
         return new BitmapStack(bitmaps);
 

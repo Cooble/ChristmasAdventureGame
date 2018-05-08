@@ -39,7 +39,7 @@ public final class LocationFactory {
      * @param location it sets all the attributes to predefined location or creates new if location==null
      * @return new Location or modified location in argument
      */
-    public static Location parseLocation(Document document, @Nullable Location location,@NotNull String locName) {
+    public static Location parseLocation(Document document, @Nullable Location location) {
         Element root = document.getDocumentElement();
 
         if (!root.getNodeName().toLowerCase().equals("location")) {
