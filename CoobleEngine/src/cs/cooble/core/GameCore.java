@@ -61,6 +61,7 @@ public class GameCore extends BasicGame {
         EVENT_BUS = new CEventBus();
         //here you goes
         //first line of universal engine branch
+        //second line of the same thing
     }
 
     private GameCore() {
