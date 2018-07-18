@@ -59,6 +59,7 @@ public class GameCore extends BasicGame {
         TARGET_TPS = 60;
         Game.core = this;
         EVENT_BUS = new CEventBus();
+        //here you goes
     }
 
     private GameCore() {
