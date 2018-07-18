@@ -60,7 +60,7 @@ public class GameCore extends BasicGame {
         Game.core = this;
         EVENT_BUS = new CEventBus();
         //here you goes
-        //master was here
+        //master was here and add cool stuff
     }
 
     private GameCore() {
