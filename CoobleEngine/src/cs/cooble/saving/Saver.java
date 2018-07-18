@@ -4,7 +4,6 @@ import com.sun.istack.internal.Nullable;
 import cs.cooble.core.Game;
 import cs.cooble.logger.Log;
 import cs.cooble.world.NBT;
-import org.lwjgl.Sys;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -15,7 +14,9 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.FileSystem;
 import java.nio.file.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -499,7 +500,7 @@ public class Saver {
             } else {
                 myPath = Paths.get(uri);
             }
-            Stream<Path> walk = Files.walk(myPath, 1);
+            Stream<Path> walk = Files.walk(myPath, 50);
             for (Iterator<Path> it = walk.iterator(); it.hasNext(); ) {
                 String pathik = it.next().toString();
                 if (pathik.equals(path))

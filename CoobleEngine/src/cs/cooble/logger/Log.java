@@ -5,7 +5,7 @@ package cs.cooble.logger;
  */
 public class Log {
     private static boolean onlyClass = true;
-    private static boolean enabled = false;
+    private static boolean enabled = true;
     private static boolean isFromInnerMethod;
 
     public static void setWholePath(boolean isDebugging) {

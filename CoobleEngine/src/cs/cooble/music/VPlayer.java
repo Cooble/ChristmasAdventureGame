@@ -40,16 +40,17 @@ public class VPlayer {
         langsFolder = saver.getRes() + "/sounds/voice/";
         currentLangFolder = langsFolder + language + "/";
         List<String> voices = saver.findResourceC((currentLangFolder), null);
-        // for (String s : voices)
-        //      System.err.println(s);
         for (String f : voices) {
-            String name = "";
-            name = f.substring(currentLangFolder.length() - 1);
+            String name = f;
+            if (name.contains("voice/"+language))
+                name = name.substring(name.indexOf("voice/"+language) +( "voice/"+language).length()+1);
             name = name.replace('/', '.');
             name = name.replace('\\', '.');
             name = name.replace("..", ".");
             name = name.replace("..", ".");
             if (name.startsWith("."))
+                name = name.substring(1);
+            if (name.startsWith("/"))
                 name = name.substring(1);
             sounds.put(SaverUtil.removeSuffix(name), Game.saver.makeResString(f));
         }
@@ -67,14 +68,21 @@ public class VPlayer {
 
     private static boolean secondTry;
 
+    /**
+     *
+     * @param speakerName
+     * @param name
+     * @param volume
+     * @return duration
+     */
     public static int speak(String speakerName, String name, double volume) {
-        if(volume==0)
-            volume=1;
+        if (volume == 0)
+            volume = 1;
         mute(speakerName);
         String fileName = name;
         String file = sounds.get(fileName);
         if (file != null) {
-            SlickSound sound = new SlickSound(file,volume, false);
+            SlickSound sound = new SlickSound(file, volume, false);
             sound.setVolume(Game.getSettings().voiceVolume);
             if (personsTalking.get(speakerName) != null) {
                 personsTalking.get(speakerName).stop();
@@ -123,9 +131,9 @@ public class VPlayer {
             InputStream stream = Game.saver.getResourceAsStream(file);
             if (file.endsWith("wav")) {
                 seconds = getWavDuration(stream);
-            }else if (file.endsWith("ogg")){
-                seconds=getOggDuration(stream);
-            }else throw new Exception();
+            } else if (file.endsWith("ogg")) {
+                seconds = getOggDuration(stream);
+            } else throw new Exception();
         } catch (Exception e) {
             Log.println("Cannot load sound: " + file, Log.LogType.ERROR);
         }
