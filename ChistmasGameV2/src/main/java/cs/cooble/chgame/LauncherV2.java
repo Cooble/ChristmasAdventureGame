@@ -16,10 +16,7 @@ import cs.cooble.saving.Saver;
 import cs.cooble.window.Tickable;
 import org.newdawn.slick.Graphics;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URISyntaxException;
 
 /**
@@ -31,26 +28,27 @@ public class LauncherV2 implements Tickable, Renderable, PreInitEvent, InitEvent
         Game.gameName = "ChristmasGame";
         CoobleLauncher.main(args);
         main2(args);
-        System.out.println("Tada");
-    }
 
+    }
 
 
     private static void main2(String[] args) {
         LauncherV2 launcherV2 = new LauncherV2();
 
         GameCore gameCore = null;
+
+        Game.saver = new Saver(Game.gameName);
+        Game.saver.setInjectedResClass(LauncherV2.class);
+        Game.saver.makeDefaultFoldersFiles();
+        Game.readSettingsNBT(Game.saver.loadSettingsNBT());
+        Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH + "gui/icon16.png"));
+        Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH + "gui/icon24.png"));
+        Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH + "gui/icon32.png"));
         try {
-            Game.saver = new Saver(Game.gameName);
-            Game.saver.setInjectedResClass(LauncherV2.class);
-            Game.saver.makeDefaultFoldersFiles();
-            Game.readSettingsNBT(Game.saver.loadSettingsNBT());
-            Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH+"gui/icon16.png"));
-            Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH+"gui/icon24.png"));
-            Game.iconNames.add(Game.saver.makeResString(Game.saver.TEXTURE_PATH+"gui/icon32.png"));
             Game.core = gameCore = GameCore.create();
         } catch (Exception e) {
             e.printStackTrace();
+            return;
         }
         gameCore.setRenderable(launcherV2);
         gameCore.setTickable(launcherV2);
@@ -58,12 +56,7 @@ public class LauncherV2 implements Tickable, Renderable, PreInitEvent, InitEvent
         Game.registerPreInitEventConsumer(launcherV2);
         Game.registerInitEventConsumer(launcherV2);
         Game.registerPostInitEventConsumer(launcherV2);
-        Game.core.EVENT_BUS.addEvent(new Event() {
-            @Override
-            public void dispatchEvent() {
-                Game.input = new MyUserInput(Game.input.getKeyListener(), Game.input.getMouseListener());
-            }
-        });
+        Game.core.EVENT_BUS.addEvent(() -> Game.input = new MyUserInput(Game.input.getKeyListener(), Game.input.getMouseListener()));
         Game.core.start(gameLoadEvent);
     }
 
@@ -106,7 +99,8 @@ public class LauncherV2 implements Tickable, Renderable, PreInitEvent, InitEvent
 
 
     }
-    private void loadBigSounds(){
+
+    private void loadBigSounds() {
         MPlayer2.loadSong("carol_of_bells");
         MPlayer2.loadSong("christmas_song");
         MPlayer2.loadSound("arctic_wind");

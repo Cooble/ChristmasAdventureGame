@@ -1,6 +1,7 @@
 package cs.cooble.core;
 
 import cs.cooble.logger.Log;
+import cs.cooble.world.CustomSettings;
 
 /**
  * Reads all the program arguments and sets the game atributes
@@ -68,26 +69,28 @@ public class CoobleLauncher {
                     Game.noSave = true;
                     Log.println("!!Game is run in NoSave MODE!!", Log.LogType.WARN);
                 }
+                CustomSettings settings = Game.getSettings();
                 if (args[i].startsWith(prefixMusic)) {
                     args[i] = args[i].substring(prefixMusic.length());
                     double d = Double.parseDouble(args[i]);
-                    Game.getSettings().songVolume = d;
+                    settings.setAttribute(settings.SONG_VOLUME,d);
                 }
                 if (args[i].startsWith(prefixSound)) {
                     args[i] = args[i].substring(prefixSound.length());
                     double d = Double.parseDouble(args[i]);
-                    Game.getSettings().soundVolume = d;
+                    settings.setAttribute(settings.SOUND_VOLUME,d);
                 }
                 if (args[i].startsWith(prefixVoice)) {
                     args[i] = args[i].substring(prefixVoice.length());
                     double d = Double.parseDouble(args[i]);
-                    Game.getSettings().voiceVolume = d;
+                    settings.setAttribute(settings.VOICE_VOLUME,d);
                 }
                 if (args[i].startsWith(prefixAudio)) {
                     args[i] = args[i].substring(prefixAudio.length());
                     double d = Double.parseDouble(args[i]);
-                    Game.getSettings().songVolume = d;
-                    Game.getSettings().soundVolume = d;
+                    settings.setAttribute(settings.SONG_VOLUME,d);
+                    settings.setAttribute(settings.SOUND_VOLUME,d);
+                    settings.setAttribute(settings.VOICE_VOLUME,d);
                 }
 
             }

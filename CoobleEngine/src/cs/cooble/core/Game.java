@@ -11,7 +11,9 @@ import cs.cooble.graphics.dialog.DialogManager;
 import cs.cooble.music.VPlayer;
 import cs.cooble.saving.Saver;
 import cs.cooble.translate.Translator;
-import cs.cooble.world.*;
+import cs.cooble.world.CustomSettings;
+import cs.cooble.world.NBT;
+import cs.cooble.world.World;
 import org.newdawn.slick.TrueTypeFont;
 
 import java.awt.*;
@@ -32,7 +34,7 @@ public final class Game {
     public static String[] error;
     public static Random random = new Random();
     public static String gameName = "CoobleEngine";
-    private static Settings settings = new Settings();
+    private static CustomSettings settings = new CustomSettings();
     public static Saver saver = new Saver(gameName);
     private static World world;
     public static boolean noSave;
@@ -99,7 +101,7 @@ public final class Game {
 
     public static void setScreenSize(int i) {
         if (i == FULL_SCREEN) {
-            settings.fullScreen = true;
+            settings.setAttribute(settings.FULLSCREEN,true);
             fullScreenMode = true;
             Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             WIDTH = (int) screenSize.getWidth();
@@ -110,27 +112,8 @@ public final class Game {
         }
     }
 
-    public static Settings getSettings() {
+    public static CustomSettings getSettings() {
         return settings;
-    }
-
-    /**
-     * loads data to given nbt
-     *
-     * @param nbt
-     */
-    public static void writeSettingsNBT(NBT nbt) {
-        settings.writeToNBT(nbt);
-    }
-
-    /**
-     * sets settings from nbt data
-     *
-     * @param nbt
-     */
-    public static void readSettingsNBT(NBT nbt) {
-        Game.settings.readFromNBT(nbt);
-        Game.fullScreenMode = settings.fullScreen;
     }
 
     public static World getWorld() {
@@ -153,12 +136,8 @@ public final class Game {
         saver.saveSettingsNBT(nbt);
     }
 
-    public static boolean isFullScreenMode() {
-        return fullScreenMode;
-    }
-
     public static void setLanguage(String name) {
-        settings.lang = name;
+        settings.setAttribute(settings.LANG,name);
         Translator.setLanguage(name);
         Translator.loadLanguage(Game.saver);
         VPlayer.setLanguage(name, Game.saver);

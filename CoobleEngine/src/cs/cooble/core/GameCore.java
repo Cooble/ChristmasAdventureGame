@@ -81,7 +81,6 @@ public class GameCore extends BasicGame {
         } catch (SlickException ignored) {//callbackUtil.java is not found in final jar (who knows why?)
 
         }
-
     }
 
     private void render(Graphics g) {

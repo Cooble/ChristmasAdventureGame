@@ -66,7 +66,7 @@ public class GameLoadEvent implements Event,PreInitEvent,InitEvent,PostInitEvent
         Log.println("Making default folders");
         Game.saver.makeDefaultFoldersFiles();
         Log.println("Loading world");
-        Game.readSettingsNBT(Game.saver.loadSettingsNBT());
+        Game.getSettings().readFromNBT(Game.saver.loadSettingsNBT());
         Log.println("Loading language");
         if (Translator.getLanguage() == null)
             Game.setLanguage(Game.getSettings().lang);
@@ -85,7 +85,6 @@ public class GameLoadEvent implements Event,PreInitEvent,InitEvent,PostInitEvent
     public void init() {
         Log.println("INIT in GameLoad");
         Game.renderer = new Renderer(Game.getWIDTH(), Game.getHEIGHT());
-        Game.saver.makeTempFolder(Game.renderer.PIXEL_WIDTH,Game.renderer.PIXEL_HEIGHT);//no longer needed, its been scaled at runtime!
         Game.dialog = new DialogManager();
 
         Game.setWorld(new World(Game.saver.loadWorld()));

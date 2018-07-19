@@ -1,16 +1,11 @@
 package cs.cooble.saving;
 
 import com.sun.istack.internal.Nullable;
-import cs.cooble.core.Game;
 import cs.cooble.logger.Log;
 import cs.cooble.world.NBT;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.FileSystem;
 import java.nio.file.*;
@@ -73,20 +68,14 @@ public class Saver {
     }
 
     //=PSANÍ A CTENÍ SOUBORÙ============================================================================================
-    public Object readObject(String file) throws IOException, ClassNotFoundException {
+    private Object readObject(String file) throws IOException, ClassNotFoundException {
         Object object = null;
-
-        // if (file.contains(":")) {//check if resources or external
         File file1 = new File(file);
 
         FileInputStream fileStream = new FileInputStream(file1);
         ObjectInputStream objectStream = new ObjectInputStream(fileStream);
 
         object = objectStream.readObject();
-        //  } else {
-        //    object = new ObjectInputStream(getResourceAsStream(file));
-        // }
-
         return object;
     }
 
@@ -177,7 +166,6 @@ public class Saver {
                 deleteDirectory(f);
             } else {
                 if (!f.delete()) {
-                    //System.out.println("*Nelze smazat soubor " + f + " ** canread " + f.canRead() + " canwirte " + f.canWrite() + " canexecute " + f.canExecute() + f.isAbsolute()+"isdir "+f.isDirectory());
                     try {
                         String out = f.toString();
                         out = out.replace('\\', '/');
@@ -185,12 +173,10 @@ public class Saver {
 
 
                         Files.delete(Paths.get(new URI("file:/" + out)));
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } catch (URISyntaxException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
-                } else { /*System.out.println("Smazan soubor " + f);*/}
+                }
             }
         }
         return dir.delete();
@@ -211,7 +197,11 @@ public class Saver {
         writeObject(getWORLD_NBT(), world);
     }
 
-    public void makeDefaultFoldersFiles() {
+    /**
+     *
+     * @return true if fresh creation
+     */
+    public boolean makeDefaultFoldersFiles() {
         try {
             if (!new File(getWORLD_NBT()).exists()) {//all has to created
                 createFolder(new File(GAME_PATH));
@@ -219,15 +209,12 @@ public class Saver {
                 createFolder(new File(getWORLD_PATH()));
                 createFolder(new File(getWorldModules()));
                 createFile(SETTINGS);
-                NBT settingsNbt = new NBT();
-                Game.readSettingsNBT(settingsNbt);
-                writeObject(SETTINGS, settingsNbt);
-            } else {
-                Game.writeSettingsNBT((NBT) readObject(SETTINGS));
+                return true;
             }
         } catch (Exception ignored) {
             ignored.printStackTrace();
         }
+        return false;
     }
 
     public void saveSettingsNBT(NBT settings) {
@@ -235,7 +222,6 @@ public class Saver {
     }
 
     public NBT loadSettingsNBT() {
-        //System.err.println("settings fucked "+SETTINGS);
         try {
             return (NBT) readObject(SETTINGS);
         } catch (Exception e) {
@@ -248,32 +234,12 @@ public class Saver {
         try {
             return (NBT) readObject(getWORLD_NBT());
         } catch (Exception e) {
-            //e.printStackTrace();
             return null;
         }
     }
 
     //=PRÁCE S INFEM====================================================================================================
 
-
-    /*public void deleteSvet(String name) {
-        try {
-            deleteDirectory(worldsPath+name);
-        }
-        catch (Exception ignored){}
-
-    }*/
-    public void deleteSvet() {
-        try {
-            deleteDirectory(getWORLD_NBT());
-        } catch (Exception ignored) {
-        }
-
-    }
-
-    public void removeEverything() {
-        deleteDirectory(GAME_PATH);
-    }
 
     public NBT loadModuleNBT(String name) {
         name = getWorldModules() + "mod_" + name + ".dat";
@@ -295,81 +261,6 @@ public class Saver {
 
     public void clearGameFolder() {
         deleteDirectory(GAME_PATH);
-    }
-
-
-    public void makeTempFolder(int W, int H) {
-        temporaries = new ArrayList<>();
-        if (!new File(GAME_PATH + "/res/textures/").exists()) {
-            //resizeImagesToTemp(getRes() + "/textures/shadow_src/", new File(GAME_PATH + "/res/textures/shadow"), W, H, true);
-            //  resizeImagesToTemp(getRes() + "/textures/location_src/", new File(GAME_PATH + "/res/textures/location"), W, H, false);
-            //  resizeImagesToTemp(getRes() + "/textures/bool_src/", new File(GAME_PATH + "/res/textures/bool"), W, H, false);
-        }
-    }
-
-    //Texture management
-    private ArrayList<File> temporaries;
-
-    private void resizeImagesToTemp(String from, File temp, int w, int h, boolean invert) {
-        temporaries.add(temp);
-        // if (!from.exists())
-        //     return;
-        try {
-            createFolder(temp);
-            copyDirectory(from, temp);
-            resizeAllLocationTextures(temp, w, h, invert);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    private void resizeAllLocationTextures(File fileWithLocs, int w, int h, boolean invert) {
-        File[] images = fileWithLocs.listFiles();
-        for (File image : images) {
-            if (!image.isFile())
-                continue;
-            try {
-                BufferedImage img = ImageIO.read(image);
-                deleteFile(image);
-                img = resizeImage(img, w, h);
-                if (invert)
-                    img = invertImage(img);
-                ImageIO.write(img, "png", image);
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-    }
-
-    public void removeTemp() {
-        for (File temporary : temporaries) {
-            deleteDirectory(temporary);
-        }
-    }
-
-    private BufferedImage resizeImage(BufferedImage src, int W, int H) {
-        BufferedImage out = new BufferedImage(W, H, BufferedImage.TYPE_INT_ARGB);
-        Graphics graphics = out.createGraphics();
-        graphics.drawImage(src, 0, 0, W, H, null);
-        graphics.dispose();
-        return out;
-    }
-
-    private BufferedImage invertImage(BufferedImage v) {
-        BufferedImage b = new BufferedImage(v.getWidth(), v.getHeight(), BufferedImage.TYPE_INT_ARGB);
-        Graphics g = b.getGraphics();
-        g.drawImage(v, 0, 0, null);
-        for (int i = 0; i < b.getWidth(); i++) {
-            for (int j = 0; j < b.getHeight(); j++) {
-                Color c = new Color(b.getRGB(i, j), true);
-                c = new Color(c.getRed(), c.getGreen(), c.getBlue(), 255 - c.getAlpha());
-                b.setRGB(i, j, c.getRGB());
-            }
-        }
-        return b;
     }
 
     public String getRes() {
@@ -470,7 +361,6 @@ public class Saver {
     }
 
     public ClassLoader getContextClassLoader() {
-        // return Thread.currentThread().getContextClassLoader();
         if (injectedResClass != null) {
             return injectedResClass.getClassLoader();
         }

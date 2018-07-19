@@ -9,6 +9,7 @@ public interface NBTSaveable {
 
     void writeToNBT(NBT nbt);
 
-    boolean isDirty();
+    @Deprecated
+    boolean isDirty();//todo remove isDirtyMethod
 
 }
