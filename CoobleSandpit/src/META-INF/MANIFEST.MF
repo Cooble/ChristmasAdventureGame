@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: cs.cooble.fx.Main
+Main-Class: mc.cooble.fx.Main
 
