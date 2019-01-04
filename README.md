@@ -5,6 +5,8 @@ Contains Sandpit program to create more xml adventure locations.
 
 Everything is working and ready to be extended, commented, and maybe to add even a brand new episodes.
 
+Even won the competition: https://www.itnetwork.cz/java/oop/zdrojove-kody/vanocni-adventura
+
 # Current Episodes:
 
 1. Santa's missing
