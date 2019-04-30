@@ -12,4 +12,4 @@ Everything is working and ready to be extended, commented, and maybe to add even
 1. Santa's missing
 2. Who knows? (like I really don't have a clue)
 
-![Alt text](screen_shot.jpg?raw=false "ScreenShot")
+![Alt text](screen_shot.jpg?raw=true "ScreenShot")
