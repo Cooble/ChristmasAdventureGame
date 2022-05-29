@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Created by Matej on 19.5.2017.
  */
 public class Loc implements ListViewItem {
-    public static final String SRC_FOLDER = "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/res/";
+    public static final String SRC_FOLDER = "ChistmasGameV2/src/main/resources/mainGameResource/";
 
     String locid;
     Bitmap back;
@@ -267,7 +267,7 @@ public class Loc implements ListViewItem {
         NamedNodeMap map = root.getAttributes();//loading loc atributes
         out.setLocid(map.getNamedItem("LOCID").getNodeValue());
 
-        String texturesFolder =SRC_FOLDER+"textures/";
+        String texturesFolder =SRC_FOLDER+"/textures/";
         try {
             out.setBack(Bitmap.load(texturesFolder+"location/" + map.getNamedItem("BACKGROUND").getNodeValue() + ".png"));
         } catch (Exception ingored) {
@@ -437,7 +437,7 @@ public class Loc implements ListViewItem {
     }
 
     public static Bitmap parseBitmap(String currentFolder, Node node, DoubleBasket scale) {
-        Bitmap bitmap = Bitmap.load("C:/Users/Matej/Dropbox/Programming/Java/ChistmasGame/ChistmasGameV2/src/main/resources/mainGameResource/res/textures/" + currentFolder + "/" + node.getTextContent() + ".png");
+        Bitmap bitmap = Bitmap.load(SRC_FOLDER+"/textures/" + currentFolder + "/" + node.getTextContent() + ".png");
         if (bitmap == null) {
             return null;
         }
@@ -471,7 +471,7 @@ public class Loc implements ListViewItem {
 
     public static Bitmap[] parseBitmaps(String currentFolder, Node node, DoubleBasket scale, IntBasket delay, BoolBasket saw) {
         Bitmap[] out;
-        File folder = new File("C:/Users/Matej/Dropbox/Programming/Java/ChistmasGame/ChistmasGameV2/src/main/resources/mainGameResource//res/textures/" +currentFolder + "/" + node.getTextContent() + "/");
+        File folder = new File(SRC_FOLDER+"/textures/" +currentFolder + "/" + node.getTextContent() + "/");
         File[] files = folder.listFiles();
         out = new Bitmap[files.length];
         for (int i = 0; i < files.length; i++) {

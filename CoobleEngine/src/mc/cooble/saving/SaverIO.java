@@ -32,6 +32,7 @@ public final class SaverIO {
         try {
             return (NBT) readObject(new File(file));
         } catch (Exception e) {
+            Log.println("Attempt to retrieve non existing file: "+file, Log.LogType.WARN);
             e.printStackTrace();
         }
         return null;
@@ -45,7 +46,7 @@ public final class SaverIO {
         }
     }
 
-    //=PSANÍ A CTENÍ SOUBORÙ============================================================================================
+    //=PSANï¿½ A CTENï¿½ SOUBORï¿½============================================================================================
     public Object readObject(File file) throws Exception {
         FileInputStream fileStream = new FileInputStream(file);
         ObjectInputStream objectStream = new ObjectInputStream(fileStream);
@@ -69,7 +70,7 @@ public final class SaverIO {
         }
     }
 
-    //=VYTVÁØENÍ SLOŽEK A SOUBORU=======================================================================================
+    //=VYTVï¿½ï¿½ENï¿½ SLOï¿½EK A SOUBORU=======================================================================================
     public void createFile(File file) {
         try (PrintWriter writer = new PrintWriter(file, "UTF-8")) {
             writer.close();
@@ -217,8 +218,10 @@ public final class SaverIO {
                 if (out == null)
                     out = getContextClassLoader().getResourceAsStream(path);
 
-                if (showException && out == null)
-                    new IOException("Cannot load resource as stream: " + oldPath).printStackTrace();
+                if (showException && out == null) {
+                    Log.println("Cannot load resource as stream: "+oldPath, Log.LogType.WARN);
+                    new IOException().printStackTrace();
+                }
             }
         }
         return out;

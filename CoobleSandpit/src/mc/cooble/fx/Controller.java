@@ -19,6 +19,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import static mc.cooble.duck.Loc.SRC_FOLDER;
+
 /**
  * Created by Matej on 18.5.2017.
  */
@@ -188,7 +190,7 @@ public class Controller implements Runnable {
     }
 
     public void saveFileAs(ActionEvent event) {
-        File file = openFolder("C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\xml", "Choose folder to save loc.xml");
+        File file = openFolder(SRC_FOLDER+"/xml", "Choose folder to save loc.xml");
         if (file == null)
             return;
         main.inform("   File: " + file + "   \n   saved", 1500);
@@ -202,7 +204,7 @@ public class Controller implements Runnable {
     }
 
     public void openLocation(ActionEvent event) {
-        File file = openFile("C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\xml", "Choose loc.xml");
+        File file = openFile(SRC_FOLDER+"/xml", "Choose loc.xml");
         if (file != null && file.exists()) {
             openLocation(file.getAbsolutePath());
         }
@@ -260,7 +262,7 @@ public class Controller implements Runnable {
     private void addstuff(boolean pickupable, boolean noBitmap) {
         Bitmap[] bitmaps = null;
         if (!noBitmap)
-            bitmaps = openMultipleFileBitmap("Please selected bitmap", "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res\\textures\\item");
+            bitmaps = openMultipleFileBitmap("Please selected bitmap", SRC_FOLDER+"/textures\\item");
         if (bitmaps != null) {
             for (Bitmap b : bitmaps) {
                 b.scale(Controller.RATIO);
@@ -382,7 +384,7 @@ public class Controller implements Runnable {
     }
 
     public void bitmapShadow(ActionEvent event) {
-        Bitmap bitmap = openFileBitmap("Set shadow", "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/res\\textures/shadow");
+        Bitmap bitmap = openFileBitmap("Set shadow", SRC_FOLDER+"/textures/shadow");
         if (bitmap == null)
             return;
         bitmap.scale(1280, 720);
@@ -390,7 +392,7 @@ public class Controller implements Runnable {
     }
 
     public void bitmapFore(ActionEvent event) {
-        Bitmap bitmap = openFileBitmap("Set Fore", "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res\\textures/location");
+        Bitmap bitmap = openFileBitmap("Set Fore", SRC_FOLDER+"/textures/location");
         if (bitmap == null)
             return;
         bitmap.scale(1280, 720);
@@ -398,7 +400,7 @@ public class Controller implements Runnable {
     }
 
     public void bitmapBool(ActionEvent event) {
-        Bitmap bitmap = openFileBitmap("Set bool", "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res\\textures/bool");
+        Bitmap bitmap = openFileBitmap("Set bool", SRC_FOLDER+"/textures/bool");
         if (bitmap == null)
             return;
         bitmap.scale(1280, 720);
@@ -406,7 +408,7 @@ public class Controller implements Runnable {
     }
 
     public void bitmapBack(ActionEvent event) {
-        Bitmap bitmap = openFileBitmap("Set background", "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res\\textures/location");
+        Bitmap bitmap = openFileBitmap("Set background", SRC_FOLDER+"/textures/location");
         if (bitmap == null)
             return;
         System.out.println("bitmap dimesnions " + bitmap.getImage().getWidth());
@@ -474,9 +476,9 @@ public class Controller implements Runnable {
     public void setArrowFinalCome(Arrow arrow, Stage dialog) {
         if (!firstQuery) {
             firstQuery = true;
-            File pathFile = findFileWithName("C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/xml/", arrow.getLocation() + ".xml");
+            File pathFile = findFileWithName(SRC_FOLDER+"/xml/", arrow.getLocation() + ".xml");
             if (!pathFile.exists()) {
-                Bitmap bitmap = openFileBitmap("Please chose location bitmap to put finalArrow pos in", "C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res/textures/location");
+                Bitmap bitmap = openFileBitmap("Please chose location bitmap to put finalArrow pos in", SRC_FOLDER+"/textures/location");
                 if (bitmap != null) {
                     this.bitmap = bitmap.scale(WIDTH, HEIGHT);
                 }
@@ -536,7 +538,7 @@ public class Controller implements Runnable {
         if (manager.getCurrentDuck() != null && manager.getCurrentDuck() instanceof Arrow) {
             Arrow arrow = (Arrow) manager.getCurrentDuck();
             if (arrow.getLocation() != null) {
-                openLocation(findFileWithName("C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource/xml/",arrow.getLocation()+".xml").getAbsolutePath());
+                openLocation(findFileWithName(SRC_FOLDER+"/xml/",arrow.getLocation()+".xml").getAbsolutePath());
             }
         }
     }

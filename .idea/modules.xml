@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChistmasGame.iml" filepath="$PROJECT_DIR$/ChistmasGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChistmasGameV2/ChistmasGameV2.iml" filepath="$PROJECT_DIR$/ChistmasGameV2/ChistmasGameV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoobleEngine/CoobleEngine.iml" filepath="$PROJECT_DIR$/CoobleEngine/CoobleEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoobleSandpit/CoobleSandpit.iml" filepath="$PROJECT_DIR$/CoobleSandpit/CoobleSandpit.iml" />
+    </modules>
+  </component>
+</project>

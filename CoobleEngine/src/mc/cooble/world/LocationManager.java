@@ -4,6 +4,7 @@ package mc.cooble.world;
 import mc.cooble.core.Game;
 import mc.cooble.entity.TextureLoadable;
 import mc.cooble.event.UserInput;
+import mc.cooble.logger.Log;
 import mc.cooble.window.Tickable;
 import mc.cooble.xml.XMLManager;
 
@@ -171,7 +172,7 @@ public final class LocationManager implements Tickable, NBTSaveable, TextureLoad
                 }
             }
             if (!hasFoundLocInSrc) {//this loc only exists as xml and does not have .java file
-                System.out.println("Hasnt found loc in xml :" +currentLocModule.MID + " --- "+locName);
+                Log.println("Location does not have associated .java file (reading from xml instead): " +currentLocModule.MID + " --- "+locName, Log.LogType.WARN);
                 locationsToAdd.add(LocationFactory.parseLocation(manager.loadDocument(currentLocModule.MID, locName), null));
 
             }

@@ -4,6 +4,8 @@ import mc.cooble.canvas.Bitmap;
 import mc.cooble.canvas.BitmapProvider;
 import mc.cooble.fx.Controller;
 
+import static mc.cooble.duck.Loc.SRC_FOLDER;
+
 /**
  * Created by Matej on 25.5.2017.
  */
@@ -18,7 +20,7 @@ public class Joe implements BitmapProvider {
 
 
     public Joe(){
-        joeBitmap=Bitmap.load("C:/Users/Matej/Dropbox/Programming/Java/ChistmasGame/ChistmasGameV2/src/main/resources/mainGameResource/res\\textures\\character\\joe\\joe_1.png").scale(Controller.RATIO);
+        joeBitmap=Bitmap.load(SRC_FOLDER+"/textures\\character\\joe\\joe_1.png").scale(Controller.RATIO);
         joeBitmapLeft=joeBitmap.clone().flip();
         joeBitmapLeft.setShouldRender(false);
     }

@@ -21,7 +21,7 @@ public final class Saver {
     public final String XML_PATH;
     public final String FONT_PATH;
     public final String TEXTURE_PATH;
-    private String res;
+    public final String SOUND_PATH;
     public String DIALOG_PATH;
     public final String DICTIONARY_PATH;
     private final SaverIO saver;
@@ -34,8 +34,8 @@ public final class Saver {
         DIALOG_PATH = mainGameRes + "/dialog/";
         DICTIONARY_PATH = mainGameRes + "/dictionary/";
         SETTINGS = GAME_PATH + "SETTINGS.txt";
-        res = mainGameRes + "/res/";
-        TEXTURE_PATH = res + "/textures/";
+        TEXTURE_PATH = mainGameRes + "/textures/";
+        SOUND_PATH = mainGameRes + "/sounds/";
         saver = new SaverIO(injectedResClass,mainGameRes);
     }
 
@@ -103,10 +103,6 @@ public final class Saver {
 
     public void clearGameFolder() {
         saver.deleteDirectory(new File(GAME_PATH));
-    }
-
-    public String getRes() {
-        return res;
     }
 
     public InputStream loadFont(String fontName) {

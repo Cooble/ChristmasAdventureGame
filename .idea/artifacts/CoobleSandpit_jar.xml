@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CoobleSandpit:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="CoobleSandpit.jar">
+      <element id="module-output" name="CoobleSandpit" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-dialogs-0.0.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

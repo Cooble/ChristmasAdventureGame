@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ChistmasGameV2:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="ChistmasGameV2.jar">
+      <element id="module-output" name="ChistmasGameV2" />
+      <element id="module-output" name="CoobleEngine" />
+    </root>
+  </artifact>
+</component>

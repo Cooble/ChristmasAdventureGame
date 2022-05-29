@@ -37,7 +37,7 @@ public class VPlayer {
     public static void load(Saver saver) {
         sounds.clear();
         VPlayer.saver = saver;
-        langsFolder = saver.getRes() + "/sounds/voice/";
+        langsFolder = saver.SOUND_PATH+ "/voice/";
         currentLangFolder = langsFolder + language + "/";
         List<String> voices = saver.getIO().findResource((currentLangFolder), null);
         for (String f : voices) {

@@ -3,6 +3,8 @@ package mc.cooble.duck;
 import mc.cooble.canvas.Bitmap;
 import mc.cooble.fx.Controller;
 
+import static mc.cooble.duck.Loc.SRC_FOLDER;
+
 /**
  * Created by Matej on 18.5.2017.
  */
@@ -17,12 +19,12 @@ public class Arrow extends ActionRectangleOwner{
     private boolean isToCome;
     private int finalX,finalY;
     private Bitmap[] currentBitmap = new Bitmap[1];
-    private static Bitmap bitmapStack0 = new Bitmap("C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res\\textures\\gui\\arrow\\arrow0.png").scale(Controller.RATIO);
+    private static Bitmap bitmapStack0 = new Bitmap(SRC_FOLDER+"/textures\\gui\\arrow\\arrow0.png").scale(Controller.RATIO);
     private static Bitmap bitmapStack1 = bitmapStack0.clone().rotate(Math.PI/2);
     private static Bitmap bitmapStack2 = bitmapStack0.clone().rotate(Math.PI);
     private static Bitmap bitmapStack3 = bitmapStack0.clone().rotate(Math.PI * 3 / 2);
 
-    private static Bitmap sbitmapStack0 = new Bitmap("C:\\Users\\Matej\\Dropbox\\Programming\\Java\\ChistmasGame\\ChistmasGameV2\\src\\main\\resources\\mainGameResource\\res\\textures\\gui\\arrow\\small_arrow0.png").scale(Controller.RATIO);
+    private static Bitmap sbitmapStack0 = new Bitmap(SRC_FOLDER+"/textures\\gui\\arrow\\small_arrow0.png").scale(Controller.RATIO);
     private static Bitmap sbitmapStack1 = sbitmapStack0.clone().rotate(Math.PI / 2);
     private static Bitmap sbitmapStack2 = sbitmapStack0.clone().rotate(Math.PI);
     private static Bitmap sbitmapStack3 = sbitmapStack0.clone().rotate(Math.PI * 3 / 2);

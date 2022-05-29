@@ -25,7 +25,7 @@ public class BoolMap {
     }
 
     public static BoolMap getBoolMap(String file) {
-        file = Game.saver.getRes() + "/textures/bool/" + file + ".png";
+        file = Game.saver.TEXTURE_PATH + "/bool/" + file + ".png";
         try {
             BufferedImage srcImage = ImageIO.read(Game.saver.getIO().getResourceAsStream(file, false));
             BufferedImage newOne = new BufferedImage(Game.renderer.PIXEL_WIDTH, Game.renderer.PIXEL_HEIGHT, BufferedImage.TYPE_INT_RGB);

@@ -223,7 +223,7 @@ public final class MPlayer2 {
     }
 
     private static String getSongPath(String name) {
-        String real = Game.saver.getRes() + SOUNDS + MUSIC + name + "." + SUFFIX_WAV;
+        String real = Game.saver.SOUND_PATH + MUSIC + name + "." + SUFFIX_WAV;
         if (!Game.saver.getIO().existResource(real)) {
             real = SaverUtil.setSuffix(real, SUFFIX_OGG);
         }
@@ -231,7 +231,7 @@ public final class MPlayer2 {
     }
 
     private static String getSoundPath(String name) {
-        String real = Game.saver.getRes() + SOUNDS + SOUND + name + "." + SUFFIX_WAV;
+        String real = Game.saver.SOUND_PATH + SOUND + name + "." + SUFFIX_WAV;
         if (!Game.saver.getIO().existResource(real)) {
             real = SaverUtil.setSuffix(real, SUFFIX_OGG);
         }

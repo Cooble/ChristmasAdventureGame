@@ -117,7 +117,7 @@ public class BitmapStack implements BitmapProvider {
         int size = 0;
         String[] files = new File(Game.saver.GAME_PATH + "/res/textures/" + dir).list();
         if (files == null || files.length == 0) {
-            List<String> l = Game.saver.getIO().findResource(Game.saver.getRes() + "/textures/" + dir, null);
+            List<String> l = Game.saver.getIO().findResource(Game.saver.TEXTURE_PATH + dir, null);
             if (l != null)
                 size = l.size();
 

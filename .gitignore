@@ -13,31 +13,9 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-*.ogg
-*.iml
-.idea
-textures.old
 out
-
-Other
-**mainGameResource/res
-**mainGameResource/dictionary
-**mainGameResource/font
-/libs/jinput-raw.dll
-/libs/lwjgl.dll
-/libs/lwjgl64.dll
-/libs/OpenAL32.dll
-/libs/jinput-raw_64.dll
-/libs/jinput-dx8_64.dll
-/libs/jinput-dx8.dll
-/libs/OpenAL64.dll

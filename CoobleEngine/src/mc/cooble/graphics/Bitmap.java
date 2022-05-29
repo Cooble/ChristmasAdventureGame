@@ -88,7 +88,7 @@ public final class Bitmap implements BitmapProvider {
      * @return bitmapStack which was loaded from res folder and path of file
      */
     private static Bitmap get(String file, boolean silent) {
-        String file1 = Game.saver.getRes() + "/textures/" + file + ".png";
+        String file1 = Game.saver.TEXTURE_PATH + file + ".png";
         try {
             InputStream is = Game.saver.getIO().getResourceAsStream(file1, false);
             BufferedImage bufferedImage = ImageIO.read(is);
