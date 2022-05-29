@@ -1,7 +1,4 @@
 # ChristmasAdventureGame
-- Title is very creative and sufficiently descriptive.
-
-
 **Simple point-and-click adventure game written in Java.**
 
 Currently, only first episode of the game is out. (available in GitHub [Releases](https://github.com/Cooble/ChristmasAdventureGame/releases/download/v1.0/ChristmasGameAdventure.zip))
