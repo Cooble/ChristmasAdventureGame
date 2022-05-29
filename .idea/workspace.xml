@@ -9,7 +9,210 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f944f4e-95c6-4b1e-a143-d08779353836" name="Default" comment="Package name changed" />
+    <list default="true" id="8f944f4e-95c6-4b1e-a143-d08779353836" name="Default" comment="Package name changed">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/chgame/LauncherV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/chgame/LauncherV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/entity/Cleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/entity/Cleaner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/entity/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/entity/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/entity/Joe.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/entity/Joe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/entity/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/entity/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemBattery.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemBattery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemBigBattery.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemBigBattery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemBlueprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemBlueprint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemCap.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemCap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemElectronics.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemElectronics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemFan.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemFan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemLux.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemLux.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemPot.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemPot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemScrewDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemScrewDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemSoldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemSoldier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemSoldierToothbrush.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemSoldierToothbrush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/ItemToothBrush.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/ItemToothBrush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/item/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/item/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/listener/MyUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/listener/MyUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationBathroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationBathroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationBlueprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationBlueprint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationBusStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationBusStop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationBusTrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationBusTrip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationCalculatorBottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationCalculatorBottom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationCellar.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationCellar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationCottageFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationCottageFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationCottageLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationCottageLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationCottageRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationCottageRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationElectricity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationElectricity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationExit.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationExit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationFly.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationFly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationGarageIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationGarageIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationGarageOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationGarageOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationHall.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationHall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationHall2.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationHall2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationIntro.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationIntro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationKumbal.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationKumbal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationOffice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationParty.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationParty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationPonk.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationPonk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationPostBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationPostBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationQuadraTrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationQuadraTrip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationToys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/LocationWhiteboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/LocationWhiteboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/location/SemiEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/location/SemiEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/module/ModuleIntro.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/module/ModuleIntro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/module/ModuleParty.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/module/ModuleParty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/module/Modules.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/module/Modules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/stuff/StuffGarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/stuff/StuffGarage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/stuff/StuffLever.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/stuff/StuffLever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/stuff/StuffMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/stuff/StuffMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/mc/cooble/stuff/StuffSpark.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/java/cooble/ch/stuff/StuffSpark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChistmasGameV2/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/ChistmasGameV2/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/core/CEventBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/core/CEventBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/core/CoobleLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/core/CoobleLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/core/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/core/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/core/GameCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/core/GameCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/dialog/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/dialog/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/dialog/DialogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/dialog/DialogUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/AcceleratedMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/AcceleratedMover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Arrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/ArrowDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/ArrowDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/ArrowLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/ArrowLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/ArrowRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/ArrowRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/ArrowUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/ArrowUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/ButtonNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/ButtonNormal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/ButtonShifting.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/ButtonShifting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/IMovable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/IMovable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/InteligentMover.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/InteligentMover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Mover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/PathFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Position2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Position2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Talkable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Talkable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/TextureLoadable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/TextureLoadable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/UniCreature.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/UniCreature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/entity/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/entity/Vector2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/ActionRectangleDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/ActionRectangleDrawer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/CKeyEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/CKeyEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/CUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/CUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/DialogEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/DialogEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/FilmEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/FilmEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/GameExitEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/GameExitEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/GameLoadEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/GameLoadEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/IUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/IUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/InitEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/InitEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/LocationLoadEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/LocationLoadEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/MouseEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/MouseEventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/MultiSpeakEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/MultiSpeakEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/MyKeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/MyKeyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/MyMouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/MyMouseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/PostInitEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/PostInitEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/PreInitEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/PreInitEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/SpeakEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/SpeakEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/event/WorldLoadEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/event/WorldLoadEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/font/FontUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/font/FontUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/font/fontlink0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/font/fontlink0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/font/fontlink1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/font/fontlink1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/Animation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/Bitmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/Bitmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/BitmapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/BitmapProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/BitmapStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/BitmapStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/BoolMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/BoolMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/CameraMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/CameraMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/FadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/FadeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/MultiBitmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/MultiBitmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/MultiBitmapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/MultiBitmapProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/Renderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/Renderable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/TextManagerOLD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/TextManagerOLD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/TextPainter.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/TextPainter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/dialog/AnswerPainter.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/dialog/AnswerPainter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/dialog/DialogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/dialog/DialogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/dialog/DialogPainter.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/dialog/DialogPainter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/graphics/home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/graphics/home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/Inventory.old" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/Inventory.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/ItemContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/ItemContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/item/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/item/Item.old" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/item/Item.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/item/ItemStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/item/ItemStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/item/home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/item/home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/stuff/Stuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/stuff/Stuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/inventory/stuff/StuffToCome.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/inventory/stuff/StuffToCome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/logger/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/logger/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/music/MPlayer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/music/MPlayer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/music/SlickSound.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/music/SlickSound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/music/VPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/music/VPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/resources/ResourceStackBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/resources/ResourceStackBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/resources/StringStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/resources/StringStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/saving/Ogg.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/saving/Ogg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/saving/Saver.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/saving/Saver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/saving/SaverIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/saving/SaverIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/saving/SaverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/saving/SaverUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/translate/SlovoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/translate/SlovoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/translate/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/translate/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/window/Tickable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/window/Tickable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/ActionRectangleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/ActionRectangleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/CItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/CItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/CModules.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/CModules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/CustomSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/CustomSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/IAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/IAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/IActionRectNoRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/IActionRectNoRect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/IActionRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/IActionRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/IRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/IRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/LocModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/LocModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/LocationBlank.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/LocationBlank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/LocationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/LocationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/LocationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/LocationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/MouseFocusGainIActionListenerWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/MouseFocusGainIActionListenerWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/NBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/NBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/NBTSaveable.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/NBTSaveable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/TickableRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/TickableRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/world/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/world/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/xml/XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/xml/XML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleEngine/src/mc/cooble/xml/XMLManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleEngine/src/cooble/ch/xml/XMLManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/actionrectangle/ActionRectangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/actionrectangle/ActionRectangles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/actionrectangle/IActionRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/actionrectangle/IActionRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/canvas/Bitmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/canvas/Bitmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/canvas/BitmapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/canvas/BitmapProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/canvas/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/canvas/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/ActionRectangleOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/ActionRectangleOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/Arrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/Arrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/AtributeOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/AtributeOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/DuckManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/DuckManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/IXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/IXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/Joe.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/Joe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/ListViewItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/ListViewItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/Loc.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/Loc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/NBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/NBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/duck/Stuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/duck/Stuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/fx/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/fx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/fx/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/timer/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/timer/Timer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/tree/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/tree/TreeSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/tree/TreeSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoobleSandpit/src/mc/cooble/xml/XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoobleSandpit/src/cooble/ch/xml/XML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -991,20 +1194,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/D/Dev/christmas_new/ChistmasGame&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.19824219&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.50689656&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/D/Dev/christmas_new/ChistmasGame",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.19824219",
+    "project.structure.side.proportion": "0.50689656",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cs.cooble.item" />
@@ -1035,7 +1239,7 @@
       <recent name="cs.cooble.duck" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sandpit">
+  <component name="RunManager" selected="Application.English">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1143,11 +1347,10 @@
       <method />
     </configuration>
     <configuration name="Czech" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mc.cooble.chgame.LauncherV2" />
+      <option name="MAIN_CLASS_NAME" value="cooble.ch.chgame.LauncherV2" />
       <module name="ChistmasGameV2" />
       <option name="PROGRAM_PARAMETERS" value="screen=full debug=false lang=cs music=0.15" />
       <option name="VM_PARAMETERS" value="-Xms128m -Xmx1024m" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -1155,27 +1358,25 @@
       </method>
     </configuration>
     <configuration name="English" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mc.cooble.chgame.LauncherV2" />
+      <option name="MAIN_CLASS_NAME" value="cooble.ch.chgame.LauncherV2" />
       <module name="ChistmasGameV2" />
       <option name="PROGRAM_PARAMETERS" value="screen=1280 debug=true lang=en fps music=0.1" />
       <option name="VM_PARAMETERS" value="-Xms128m -Xmx1024m -ea " />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="EnglishBig" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mc.cooble.chgame.LauncherV2" />
+      <option name="MAIN_CLASS_NAME" value="cooble.ch.chgame.LauncherV2" />
       <module name="ChistmasGameV2" />
       <option name="PROGRAM_PARAMETERS" value="screen=1920 debug=True lang=en " />
       <option name="VM_PARAMETERS" value="-Xms128m -Xmx1024m" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Fullscreen" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mc.cooble.chgame.LauncherV2" />
+      <option name="MAIN_CLASS_NAME" value="cooble.ch.chgame.LauncherV2" />
       <module name="ChistmasGameV2" />
       <option name="PROGRAM_PARAMETERS" value="screen=full debug=True lang=en" />
       <option name="VM_PARAMETERS" value="-Xms128m -Xmx1024m" />
@@ -1184,14 +1385,14 @@
       </method>
     </configuration>
     <configuration name="Sandpit" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mc.cooble.fx.Main" />
+      <option name="MAIN_CLASS_NAME" value="cooble.ch.fx.Main" />
       <module name="CoobleSandpit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="light" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="mc.cooble.core.LightTest" />
+      <option name="MAIN_CLASS_NAME" value="cooble.ch.core.LightTest" />
       <module name="CoobleEngine" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1605,7 +1806,8 @@
       <workItem from="1653827027411" duration="431000" />
       <workItem from="1653827624330" duration="456000" />
       <workItem from="1653827126137" duration="5177000" />
-      <workItem from="1653833840956" duration="11000" />
+      <workItem from="1653833840956" duration="126000" />
+      <workItem from="1653833988629" duration="3249000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit. Just working ChristmasGame!">
       <created>1508701641005</created>
