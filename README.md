@@ -13,6 +13,12 @@ Have you ever wonderered, what would happen if Santa got kidnapped?
 No? Well, that's sad but that's exactly what happens,
 and it's up to the player to figure out the identity of the criminal
 as well as to save Santa... and Xmas I guess.
+## Current Episodes:
+
+1. Santa's missing
+2. Who knows? (like I really don't have a clue)
+
+![Alt text](screen_shot.png?raw=false "")
 
 ## Story
 Player is invited for yearly Christmas party with Santa at the North Pole.
@@ -40,11 +46,6 @@ Project consists of 3 modules:
   - Generates all static content from placing items in locations to writing branching dialog
   - constant `Loc.SRC_FOLDER` stores game resource folder, defaultly is set to ChristmasGameV2
 
-# Current Episodes:
 
-1. Santa's missing
-2. Who knows? (like I really don't have a clue)
-
-![Alt text](screen_shot.png?raw=false "")
 
 
